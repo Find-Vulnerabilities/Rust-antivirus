@@ -16,4 +16,4 @@ SafetyWen Rust Editionis a Rust-based Windows antivirus system with real-time mo
 
 ```bash
 cargo build
-cargo build --bin 
+cargo build --bin realtime_monitor.rs
