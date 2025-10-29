@@ -10,10 +10,10 @@ SafetyWen Rust Editionis a Rust-based Windows antivirus system with real-time mo
 - 🧹 Junk Cleaner: Cleans system junk and temporary files
 - 🧰 GUI: Uses egui to provide a simple user interface
 
-## Effectiveness
-This antivirus software can defend against 85% of modern viruses.
+## 🗡️ Effectiveness
+This antivirus software can defend against 85%-90% of modern viruses.
 
-## Security
+## 🛡️ Security
 Windows defender or other antivirus software might falsely flag this antivirus program, but after VirusTotal scan, it's safe; only a few antivirus programs gave it a false positive.
 
 ## ⚙️ Compile
