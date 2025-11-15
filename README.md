@@ -1,6 +1,6 @@
 # SafetyWen Antivirus 
 
-SafetyWen Rust Editionis a Rust-based Windows antivirus system with real-time monitoring, YARA scanning, memory analysis and file integrity checking. This project is open source and welcomes reference, modification, and extension.
+SafetyWen Rust Editions a Rust-based Windows antivirus system with real-time monitoring, YARA scanning, memory analysis and file integrity checking. This project is open source and welcomes reference, modification, and extension.
 
 ## 🔍 Features
 
@@ -14,7 +14,7 @@ SafetyWen Rust Editionis a Rust-based Windows antivirus system with real-time mo
 This antivirus software can defend against 85%-90% of modern viruses.
 
 ## 🛡️ Security
-I can promise they'er not malware. Windows defender or other antivirus software might falsely flag this antivirus program, but after VirusTotal scan, it's safe; only a few antivirus programs gave it a false positive.
+I can promise they're not malware. Windows defender or other antivirus software might falsely flag this antivirus program, but after VirusTotal scan, it's safe; only a few antivirus programs gave it a false positive.
 
 ## ⚙️ Compile
 
