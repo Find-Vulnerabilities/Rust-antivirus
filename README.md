@@ -13,6 +13,8 @@ SafetyWen Rust Editions a Rust-based Windows antivirus system with real-time mon
 ## 🗡️ Effectiveness
 This antivirus software can defend against 85%-90% of modern viruses.
 
+https://github.com/user-attachments/assets/cdd5e7b9-0664-4062-9cd1-71a034ef0f9b
+
 ## 🛡️ Security
 I can promise they're not malware. Windows defender or other antivirus software might falsely flag this antivirus program, but after VirusTotal scan, it's safe; only a few antivirus programs gave it a false positive.
 
@@ -22,3 +24,7 @@ I can promise they're not malware. Windows defender or other antivirus software 
 
 ```bash
 cargo build
+
+
+
+
