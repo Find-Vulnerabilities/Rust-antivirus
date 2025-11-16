@@ -25,4 +25,3 @@ I can promise they're not malware. Windows defender or other antivirus software 
 ```bash
 cargo build
 
-
