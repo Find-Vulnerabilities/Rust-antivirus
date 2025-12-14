@@ -11,7 +11,7 @@ SafetyWen Rust Editions is a Rust-based Windows antivirus system with real-time 
 - 🧰 GUI: Uses egui to provide a simple user interface
 
 ## 🗡️ Effectiveness
-This antivirus software can defend against 85%-90% of modern viruses.
+This antivirus software can defend against 90% of modern viruses.
 
 https://github.com/user-attachments/assets/cdd5e7b9-0664-4062-9cd1-71a034ef0f9b
 
