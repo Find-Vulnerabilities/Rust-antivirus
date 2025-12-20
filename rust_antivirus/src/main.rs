@@ -32,7 +32,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
     };
 
     match eframe::run_native(
-        "SafetyWen Antivirus - Rust Edition",
+        "Wenle Antivirus - Rust Edition",
         options,
         Box::new(|_cc| Ok(Box::new(app))),
     ) {
