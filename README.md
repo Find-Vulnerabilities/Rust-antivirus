@@ -23,6 +23,9 @@ I can promise Wenle is not a malware. Windows defender or other antivirus softwa
 
 
 
-`cargo build --release`bash
+`cargo build --release`
+
+## How to use Wenle?
+You should first place the compiled files in the "Configuration" folder, then unzip "anti.zip" and Wenle should work normally.
 
 
