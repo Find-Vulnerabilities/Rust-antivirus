@@ -1,6 +1,6 @@
-# SafetyWen Antivirus 
+#Wenle Antivirus 
 
-SafetyWen Rust Editions is a Rust-based Windows antivirus system with real-time monitoring, YARA scanning, memory analysis and file integrity checking. This project is open source and welcomes reference, modification, and extension.
+Wenle Rust Editions is a Rust-based Windows antivirus system with real-time monitoring, YARA scanning, memory analysis and file integrity checking. This project is open source and welcomes reference, modification, and extension.
 
 ## 🔍 Features
 
@@ -16,7 +16,7 @@ This antivirus software can defend against 90% of modern viruses.
 https://github.com/user-attachments/assets/cdd5e7b9-0664-4062-9cd1-71a034ef0f9b
 
 ## 🛡️ Security
-I can promise they're not malware. Windows defender or other antivirus software might falsely flag this antivirus program, but after VirusTotal scan, it's safe; only a few antivirus programs gave it a false positive.
+I can promise Wenle Antivirus software not a malware. Windows defender or other antivirus software might falsely flag this antivirus program, but after VirusTotal scan, it's safe; only a few antivirus programs gave it a false positive.
 
 ## ⚙️ Compile
 
