@@ -17,7 +17,7 @@ I can promise Wenle is not a malware. Windows defender or other antivirus softwa
 
 
 
-`bash
+`
 cargo build --release
 `
 ## How to use Wenle?
