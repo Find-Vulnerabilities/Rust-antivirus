@@ -1,8 +1,8 @@
 use eframe::egui;
-use std::sync::{Arc, atomic::{AtomicBool, Ordering}};
+use std::sync::{Arc, Mutex, atomic::{AtomicBool, AtomicUsize, Ordering}}; // changed: add Mutex + AtomicUsize
 use std::thread;
+use std::time::Instant;
 
-// Add rfd for native folder selection
 use rfd::FileDialog;
 
 use crate::engine::{AntivirusEngine, ScanResult, DeletionRecord, MemoryScanResult};
@@ -32,6 +32,12 @@ pub struct AntivirusApp {
     // 隔离区
     quarantined_files: Vec<DeletionRecord>,
     selected_quarantine_index: Option<usize>,
+
+    // --- NEW: progress / shared results for UI progress bar ---
+    scan_results_shared: Arc<Mutex<Vec<ScanResult>>>, // worker pushes here
+    progress_total: usize,
+    progress_count: Arc<AtomicUsize>,
+    scan_start: Option<Instant>,
 }
 
 #[derive(PartialEq)]
@@ -67,6 +73,12 @@ impl AntivirusApp {
             deletion_records,
             quarantined_files,
             selected_quarantine_index: None,
+
+            // NEW initializations
+            scan_results_shared: Arc::new(Mutex::new(Vec::new())),
+            progress_total: 0,
+            progress_count: Arc::new(AtomicUsize::new(0)),
+            scan_start: None,
         }
     }
 
@@ -113,7 +125,36 @@ impl AntivirusApp {
             // 扫描选项
             ui.checkbox(&mut self.deep_scan, "Deep Scan (Recursive)");
             
-            // 扫描按钮
+            // If worker is running, copy shared results into local results for display
+            {
+                if let Ok(shared_lock) = self.scan_results_shared.lock() {
+                    // replace UI-visible results with current worker contents
+                    self.scan_results = shared_lock.clone();
+                }
+            }
+
+            // Progress bar + elapsed time
+            if self.scan_in_progress.load(Ordering::Relaxed) {
+                let done = self.progress_count.load(Ordering::Relaxed);
+                let total = self.progress_total.max(1); // avoid div by zero
+                let fraction = (done as f32) / (total as f32);
+
+                let elapsed = if let Some(start) = self.scan_start {
+                    let d = Instant::now().duration_since(start);
+                    format!("{:02}:{:02}", d.as_secs() / 60, d.as_secs() % 60)
+                } else {
+                    "00:00".to_string()
+                };
+
+                ui.horizontal(|ui| {
+                    ui.add(egui::ProgressBar::new(fraction)
+                        .show_percentage()
+                        .text(format!("Scanned {}/{} • Elapsed {}", done, self.progress_total, elapsed))
+                    );
+                });
+            }
+
+            // 扫描按钮 (now spawns worker)
             ui.horizontal(|ui| {
                 if ui.button("Start Scan").clicked() && !self.scan_in_progress.load(Ordering::Relaxed) {
                     self.start_scan(ctx);
@@ -121,6 +162,7 @@ impl AntivirusApp {
                 
                 if ui.button("Stop Scan").clicked() && self.scan_in_progress.load(Ordering::Relaxed) {
                     self.engine.stop();
+                    self.scan_in_progress.store(false, Ordering::Relaxed);
                 }
                 
                 if !self.threats_detected.is_empty() {
@@ -377,32 +419,72 @@ impl AntivirusApp {
         });
     }
 
+    // Replace synchronous start_scan with threaded-progressing version
     fn start_scan(&mut self, ctx: &egui::Context) {
         // set in-progress flag
         self.scan_in_progress.store(true, Ordering::Relaxed);
         self.scan_results.clear();
         self.threats_detected.clear();
 
-        // Run scan synchronously so results are immediately available in the UI.
-        // This keeps the change minimal and ensures the "Handle" buttons map to visible results.
         (*self.engine).reset_stop_signal();
         let directory = self.selected_directory.clone();
         let deep_scan = self.deep_scan;
 
-        let results = (*self.engine).scan_directory(std::path::Path::new(&directory), deep_scan);
+        // Build list of files to scan (synchronously) so we can show total progress
+        let mut file_paths: Vec<std::path::PathBuf> = Vec::new();
+        if deep_scan {
+            for entry in walkdir::WalkDir::new(&directory).into_iter().filter_map(|e| e.ok()) {
+                if entry.file_type().is_file() {
+                    file_paths.push(entry.into_path());
+                }
+            }
+        } else {
+            if let Ok(entries) = std::fs::read_dir(&directory) {
+                for entry in entries.flatten() {
+                    if entry.file_type().map(|ft| ft.is_file()).unwrap_or(false) {
+                        file_paths.push(entry.path());
+                    }
+                }
+            }
+        }
 
-        // update UI state with results
-        self.scan_results = results.clone();
-        self.threats_detected = results.into_iter().filter(|r| r.threat_detected).collect();
+        // prepare shared state for worker
+        self.progress_total = file_paths.len();
+        self.progress_count.store(0, Ordering::Relaxed);
+        self.scan_start = Some(Instant::now());
+        {
+            let mut shared = self.scan_results_shared.lock().unwrap();
+            shared.clear();
+        }
 
-        // mark finished
-        self.scan_in_progress.store(false, Ordering::Relaxed);
+        let shared_results = self.scan_results_shared.clone();
+        let progress_counter = self.progress_count.clone();
+        let scan_in_progress_flag = self.scan_in_progress.clone();
+        let engine = self.engine.clone();
 
-        // refresh deletion/quarantine lists in case engine acted during scan
-        self.refresh_deletion_log();
-        self.refresh_quarantine_list();
+        // Spawn worker thread
+        thread::spawn(move || {
+            for path in file_paths {
+                // check stop flag
+                if *engine.stop_signal.lock().unwrap() {
+                    break;
+                }
 
-        // ask UI to repaint immediately to update buttons and lists
+                let res = (*engine).scan_file(&path);
+
+                // push into shared vector
+                if let Ok(mut lock) = shared_results.lock() {
+                    lock.push(res.clone());
+                }
+
+                progress_counter.fetch_add(1, Ordering::Relaxed);
+            }
+
+            // mark finished
+            scan_in_progress_flag.store(false, Ordering::Relaxed);
+        });
+
+        // request repaint so UI updates progress immediately
         ctx.request_repaint();
     }
 
