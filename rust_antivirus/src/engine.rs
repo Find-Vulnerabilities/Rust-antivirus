@@ -337,6 +337,10 @@ impl AntivirusEngine {
         } else {
             cmd.arg("-r").arg("-m").arg("-s").arg(rules_path.as_os_str());
         }
+
+        // Add thread count parameter so yara runs with 4 threads
+        cmd.arg("-p").arg("4");
+
         cmd.arg(file_path);
 
         match cmd.output() {
