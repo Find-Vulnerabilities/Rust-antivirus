@@ -16,6 +16,8 @@ use winapi::{
     },
 };
 use anyhow::{Result, anyhow};
+use std::thread;
+use crossbeam_channel::{unbounded};
 
 #[derive(Debug, Clone)]
 pub struct MemoryRegion {
@@ -88,19 +90,58 @@ impl MemoryScanner {
 
     /// 扫描所有进程内存
     pub fn scan_all_processes(&self) -> Vec<MemoryScanResult> {
-        let mut results = Vec::new();
-        
-        for (pid, process) in self.system.processes() {
-            if self.is_system_process(*pid) {
-                continue;
-            }
+        // Collect non-system PIDs to scan
+        let mut pids: Vec<Pid> = self.system.processes()
+            .keys()
+            .cloned()
+            .filter(|pid| !self.is_system_process(*pid))
+            .collect();
 
-            match self.scan_process_memory(*pid) {
-                Ok(result) => results.push(result),
-                Err(e) => {
-                    log::warn!("Failed to scan process {:?} (PID: {}): {}", process.name(), pid, e);
+        // If no processes, return early
+        if pids.is_empty() {
+            return Vec::new();
+        }
+
+        // Create channels for work distribution and results
+        let (work_tx, work_rx) = unbounded::<Pid>();
+        let (res_tx, res_rx) = unbounded::<MemoryScanResult>();
+
+        // Send all PIDs to the work channel
+        for pid in pids.drain(..) {
+            let _ = work_tx.send(pid);
+        }
+        drop(work_tx); // close sender so workers exit when done
+
+        // Spawn 4 worker threads to scan memory concurrently
+        let worker_count = 4;
+        for _ in 0..worker_count {
+            let work_rx = work_rx.clone();
+            let res_tx = res_tx.clone();
+            thread::spawn(move || {
+                // each worker has its own MemoryScanner instance for thread-safety
+                let mut local_scanner = MemoryScanner::new();
+                local_scanner.refresh();
+
+                for pid in work_rx.iter() {
+                    match local_scanner.scan_process_memory(pid) {
+                        Ok(result) => {
+                            let _ = res_tx.send(result);
+                        }
+                        Err(e) => {
+                            log::warn!("Worker failed scanning PID {}: {}", pid, e);
+                        }
+                    }
                 }
-            }
+                // worker drops res_tx clone on exit
+            });
+        }
+
+        drop(res_tx); // drop original sender so iterator finishes when all workers done
+
+        // Collect results from workers
+        let mut results = Vec::new();
+        for res in res_rx.iter() {
+            results.push(res);
         }
 
         results
