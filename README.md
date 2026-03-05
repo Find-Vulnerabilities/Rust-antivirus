@@ -21,6 +21,6 @@ I can promise Wenle is not a malware. Windows defender or other antivirus softwa
 cargo build --release
 `
 ## How to use Wenle?
-After compilation, first unzip Configuration.zip, then place "rust_antivirus.exe" and "realtime_monitor.exe" in a folder named Configuration.
+After compilation, first unzip Configuration.zip, then place "rust_antivirus.exe" , "file_monitor.exe" and "memory_monitor"in a folder named Configuration.
 
 
