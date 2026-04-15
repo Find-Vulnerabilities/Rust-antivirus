@@ -1,0 +1,990 @@
+warning: rust_antivirus@0.2.0-enterprise: ✓ Found YARA lib path: C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\lib
+   Compiling rust_antivirus v0.2.0-enterprise (C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus)
+warning: unused import: `std::os::raw::c_void`
+  --> src\driver_bridge.rs:11:5
+   |
+11 | use std::os::raw::c_void;
+   |     ^^^^^^^^^^^^^^^^^^^^
+   |
+   = note: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused import: `Pid`
+   --> src\kernel_driver.rs:187:31
+    |
+187 |         use sysinfo::{System, Pid};
+    |                               ^^^
+
+warning: unused import: `std::ptr`
+   --> src\kernel_driver.rs:331:13
+    |
+331 |         use std::ptr;
+    |             ^^^^^^^^
+
+warning: unused import: `std::path::PathBuf`
+ --> src\behavior_monitor.rs:8:5
+  |
+8 | use std::path::PathBuf;
+  |     ^^^^^^^^^^^^^^^^^^
+
+warning: unnecessary `unsafe` block
+   --> src\yara_sys.rs:203:9
+    |
+203 |         unsafe {
+    |         ^^^^^^ unnecessary `unsafe` block
+    |
+    = note: `#[warn(unused_unsafe)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused variable: `engine`
+   --> src\process_monitor.rs:144:9
+    |
+144 |         engine: &AntivirusEngine,
+    |         ^^^^^^ help: if this is intentional, prefix it with an underscore: `_engine`
+    |
+    = note: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused variable: `pid_value`
+   --> src\engine.rs:780:13
+    |
+780 |         let pid_value = pid.as_u32();
+    |             ^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_pid_value`
+
+warning: unused variable: `suspicious_names`
+  --> src\memory_scanning.rs:45:13
+   |
+45 |         let suspicious_names = [
+   |             ^^^^^^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_suspicious_names`
+
+warning: unused variable: `listener_handle`
+   --> src\driver_bridge.rs:174:13
+    |
+174 |         let listener_handle = thread::spawn(move || {
+    |             ^^^^^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_listener_handle`
+
+warning: variable does not need to be mutable
+   --> src\driver_bridge.rs:187:13
+    |
+187 |         let mut response_buf = vec![0u8; std::mem::size_of::<ScanResponseMessage>()];
+    |             ----^^^^^^^^^^^^
+    |             |
+    |             help: remove this `mut`
+    |
+    = note: `#[warn(unused_mut)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused variable: `response_buf`
+   --> src\driver_bridge.rs:187:13
+    |
+187 |         let mut response_buf = vec![0u8; std::mem::size_of::<ScanResponseMessage>()];
+    |             ^^^^^^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_response_buf`
+
+warning: unused variable: `quarantine`
+  --> src\kernel_driver.rs:97:9
+   |
+97 |         quarantine: &Arc<Mutex<QuarantineManager>>,
+   |         ^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_quarantine`
+
+warning: unused variable: `protected_dlls`
+   --> src\kernel_driver.rs:183:9
+    |
+183 |         protected_dlls: &Arc<Mutex<Vec<String>>>,
+    |         ^^^^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_protected_dlls`
+
+warning: unused variable: `risk_level`
+   --> src\sandbox.rs:341:34
+    |
+341 |                     if let Some(&risk_level) = dangerous_apis.get(func_name.as_str()) {
+    |                                  ^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_risk_level`
+
+warning: unused variable: `duration_secs`
+   --> src\behavior_monitor.rs:297:69
+    |
+297 |     fn send_windows_notification(&self, title: &str, message: &str, duration_secs: u32) -> Result<()> {
+    |                                                                     ^^^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_duration_secs`
+
+warning: fields `entropy`, `has_packed_sections`, and `suspicious_imports` are never read
+  --> src\sandbox.rs:54:5
+   |
+53 | struct StaticAnalysisResult {
+   |        -------------------- fields in this struct
+54 |     entropy: f64,
+   |     ^^^^^^^
+55 |     has_packed_sections: bool,
+   |     ^^^^^^^^^^^^^^^^^^^
+56 |     suspicious_imports: Vec<String>,
+   |     ^^^^^^^^^^^^^^^^^^
+   |
+   = note: `StaticAnalysisResult` has derived impls for the traits `Clone` and `Debug`, but these are intentionally ignored during dead code analysis
+   = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+warning: fields `api_hooks` and `resource_limits` are never read
+  --> src\sandbox.rs:63:5
+   |
+61 | pub struct SandboxEngine {
+   |            ------------- fields in this struct
+62 |     behavior_log: Arc<Mutex<Vec<BehaviorEvent>>>,
+63 |     api_hooks: Arc<Mutex<Vec<String>>>,
+   |     ^^^^^^^^^
+64 |     resource_limits: SandboxResourceLimits,
+   |     ^^^^^^^^^^^^^^^
+
+warning: static `SERVICE_DESCRIPTION` is never used
+  --> src\service.rs:11:8
+   |
+11 | static SERVICE_DESCRIPTION: &str = "Real-time antivirus protection with PE analysis, behavior monitoring, and file isolation";
+   |        ^^^^^^^^^^^^^^^^^^^
+
+warning: `rust_antivirus` (lib) generated 18 warnings (run `cargo fix --lib -p rust_antivirus` to apply 14 suggestions)
+warning: unused import: `std::path::Path`
+ --> src\bin\yara_diagnostic.rs:3:5
+  |
+3 | use std::path::Path;
+  |     ^^^^^^^^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused import: `std::sync::Arc`
+ --> src\bin\yara_integration.rs:3:5
+  |
+3 | use std::sync::Arc;
+  |     ^^^^^^^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused import: `std::os::windows::prelude::AsRawHandle`
+ --> src\bin\driver_bridge.rs:2:5
+  |
+2 | use std::os::windows::prelude::AsRawHandle;
+  |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused import: `std::sync::Mutex`
+ --> src\bin\yara_integration.rs:4:5
+  |
+4 | use std::sync::Mutex;
+  |     ^^^^^^^^^^^^^^^^
+
+warning: unused import: `rust_antivirus::yara_sys`
+ --> src\bin\yara_integration.rs:7:5
+  |
+7 | use rust_antivirus::yara_sys;
+  |     ^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: unused import: `std::ptr`
+ --> src\bin\driver_bridge.rs:4:5
+  |
+4 | use std::ptr;
+  |     ^^^^^^^^
+
+warning: unused import: `rust_antivirus::driver_bridge`
+ --> src\bin\driver_bridge.rs:5:5
+  |
+5 | use rust_antivirus::driver_bridge;
+  |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: field `device_path` is never read
+  --> src\bin\driver_bridge.rs:12:5
+   |
+11 | pub struct DriverInterface {
+   |            --------------- field in this struct
+12 |     device_path: String,
+   |     ^^^^^^^^^^^
+   |
+   = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused import: `std::path::PathBuf`
+ --> src\bin\test_self_scan.rs:3:5
+  |
+3 | use std::path::PathBuf;
+  |     ^^^^^^^^^^^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused import: `std::path::Path`
+ --> src\bin\yara_test.rs:2:5
+  |
+2 | use std::path::Path;
+  |     ^^^^^^^^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused import: `rust_antivirus::yara_engine`
+ --> src\bin\yara_scan_example.rs:6:5
+  |
+6 | use rust_antivirus::yara_engine;
+  |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused import: `rust_antivirus::yara_sys`
+ --> src\bin\yara_test.rs:3:5
+  |
+3 | use rust_antivirus::yara_sys;
+  |     ^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: unused imports: `Pid` and `ProcessRefreshKind`
+  --> src\bin\memory_monitor.rs:11:23
+   |
+11 | use sysinfo::{System, ProcessRefreshKind, Pid};
+   |                       ^^^^^^^^^^^^^^^^^^  ^^^
+   |
+   = note: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused import: `rust_antivirus::engine`
+  --> src\bin\file_monitor.rs:11:5
+   |
+11 | use rust_antivirus::engine;
+   |     ^^^^^^^^^^^^^^^^^^^^^^
+   |
+   = note: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused import: `rust_antivirus::memory_scanner`
+  --> src\bin\memory_monitor.rs:15:5
+   |
+15 | use rust_antivirus::memory_scanner;
+   |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: unused import: `Pid`
+   --> src\kernel_driver.rs:187:31
+    |
+187 |         use sysinfo::{System, Pid};
+    |                               ^^^
+    |
+    = note: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+warning: variable does not need to be mutable
+  --> src\bin\memory_monitor.rs:84:9
+   |
+84 |     let mut driver = match DriverInterface::open("\\\\.\\WenleDriver") {
+   |         ----^^^^^^
+   |         |
+   |         help: remove this `mut`
+   |
+   = note: `#[warn(unused_mut)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused variable: `driver`
+  --> src\bin\memory_monitor.rs:84:9
+   |
+84 |     let mut driver = match DriverInterface::open("\\\\.\\WenleDriver") {
+   |         ^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_driver`
+   |
+   = note: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused variable: `pid`
+   --> src\bin\memory_monitor.rs:173:27
+    |
+173 | fn heuristic_scan_process(pid: u32, exe_path: &str, proc_name: &str) -> Option<(String, u8)> {
+    |                           ^^^ help: if this is intentional, prefix it with an underscore: `_pid`
+
+warning: variable does not need to be mutable
+  --> src\bin\file_monitor.rs:97:9
+   |
+97 |     let mut driver = match DriverInterface::open("\\\\.\\WenleDriver") {
+   |         ----^^^^^^
+   |         |
+   |         help: remove this `mut`
+   |
+   = note: `#[warn(unused_mut)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused variable: `driver`
+  --> src\bin\file_monitor.rs:97:9
+   |
+97 |     let mut driver = match DriverInterface::open("\\\\.\\WenleDriver") {
+   |         ^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_driver`
+   |
+   = note: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused variable: `pid_value`
+   --> src\engine.rs:780:13
+    |
+780 |         let pid_value = pid.as_u32();
+    |             ^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_pid_value`
+    |
+    = note: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused variable: `engine`
+   --> src\process_monitor.rs:144:9
+    |
+144 |         engine: &AntivirusEngine,
+    |         ^^^^^^ help: if this is intentional, prefix it with an underscore: `_engine`
+
+warning: `rust_antivirus` (bin "yara_integration") generated 3 warnings (run `cargo fix --bin "yara_integration" -p rust_antivirus` to apply 3 suggestions)
+warning: `rust_antivirus` (bin "driver_bridge") generated 4 warnings (run `cargo fix --bin "driver_bridge" -p rust_antivirus` to apply 3 suggestions)
+warning: fields `size`, `mtime`, and `hash` are never read
+  --> src\engine.rs:63:9
+   |
+62 | pub struct FileIntegrity {
+   |            ------------- fields in this struct
+63 |     pub size: u64,
+   |         ^^^^
+64 |     pub mtime: u64,
+   |         ^^^^^
+65 |     pub hash: String,
+   |         ^^^^
+   |
+   = note: `FileIntegrity` has derived impls for the traits `Clone` and `Debug`, but these are intentionally ignored during dead code analysis
+   = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+warning: field `0` is never read
+  --> src\engine.rs:70:8
+   |
+70 |     Io(io::Error),
+   |     -- ^^^^^^^^^
+   |     |
+   |     field in this variant
+   |
+   = note: `EngineError` has a derived impl for the trait `Debug`, but this is intentionally ignored during dead code analysis
+help: consider changing the field to be of unit type to suppress this warning while preserving the field numbering, or remove the field
+   |
+70 -     Io(io::Error),
+70 +     Io(()),
+   |
+
+warning: variants `Json` and `Yara` are never constructed
+  --> src\engine.rs:71:5
+   |
+69 | pub enum EngineError {
+   |          ----------- variants in this enum
+70 |     Io(io::Error),
+71 |     Json(serde_json::Error),
+   |     ^^^^
+72 |     Yara(String),
+   |     ^^^^
+   |
+   = note: `EngineError` has a derived impl for the trait `Debug`, but this is intentionally ignored during dead code analysis
+
+warning: fields `file_integrity_records` and `yara_rules` are never read
+  --> src\engine.rs:80:9
+   |
+75 | pub struct AntivirusEngine {
+   |            --------------- fields in this struct
+...
+80 |     pub file_integrity_records: Arc<Mutex<HashMap<PathBuf, FileIntegrity>>>,
+   |         ^^^^^^^^^^^^^^^^^^^^^^
+...
+83 |     pub yara_rules: Arc<Mutex<Option<()>>>, // Placeholder, not used
+   |         ^^^^^^^^^^
+
+warning: method `scan_directory` is never used
+   --> src\engine.rs:666:12
+    |
+117 | impl AntivirusEngine {
+    | -------------------- method in this implementation
+...
+666 |     pub fn scan_directory(&self, dir_path: &Path, deep_scan: bool) -> Vec<ScanResult> {
+    |            ^^^^^^^^^^^^^^
+
+warning: struct `MemoryRegion` is never constructed
+  --> src\memory_scanner.rs:23:12
+   |
+23 | pub struct MemoryRegion {
+   |            ^^^^^^^^^^^^
+
+warning: struct `MemoryScanResult` is never constructed
+  --> src\memory_scanner.rs:34:12
+   |
+34 | pub struct MemoryScanResult {
+   |            ^^^^^^^^^^^^^^^^
+
+warning: struct `ProcessInfo` is never constructed
+  --> src\memory_scanner.rs:44:12
+   |
+44 | pub struct ProcessInfo {
+   |            ^^^^^^^^^^^
+
+warning: struct `MemoryScanner` is never constructed
+  --> src\memory_scanner.rs:51:12
+   |
+51 | pub struct MemoryScanner {
+   |            ^^^^^^^^^^^^^
+
+warning: multiple associated items are never used
+   --> src\memory_scanner.rs:64:12
+    |
+ 63 | impl MemoryScanner {
+    | ------------------ associated items in this implementation
+ 64 |     pub fn new() -> Self {
+    |            ^^^
+...
+ 70 |     pub fn refresh(&mut self) {
+    |            ^^^^^^^
+...
+ 74 |     pub fn is_system_process(&self, pid: Pid) -> bool {
+    |            ^^^^^^^^^^^^^^^^^
+...
+100 |     pub fn scan_all_processes(&self) -> Vec<MemoryScanResult> {
+    |            ^^^^^^^^^^^^^^^^^^
+...
+159 |     pub fn scan_process_memory(&self, pid: Pid) -> Result<MemoryScanResult> {
+    |            ^^^^^^^^^^^^^^^^^^^
+...
+199 |     pub fn get_process_memory_map(&self, pid: Pid) -> Result<Vec<MemoryRegion>> {
+    |            ^^^^^^^^^^^^^^^^^^^^^^
+...
+247 |     pub fn read_memory_region(&self, pid: Pid, address: usize, size: usize) -> Result<Vec<u8>> {
+    |            ^^^^^^^^^^^^^^^^^^
+...
+340 |     pub fn read_memory_chunked(
+    |            ^^^^^^^^^^^^^^^^^^^
+...
+377 |     fn read_and_hash_memory(&self, handle: winapi::um::winnt::HANDLE, address: usize, size: usize) -> Result<String> {
+    |        ^^^^^^^^^^^^^^^^^^^^
+...
+408 |     fn analyze_memory_regions(&self, pid: Pid, regions: &[MemoryRegion]) -> Result<Vec<MemoryRegion>> {
+    |        ^^^^^^^^^^^^^^^^^^^^^^
+...
+439 |     fn analyze_process_behavior(&self, pid: Pid) -> HashMap<String, bool> {
+    |        ^^^^^^^^^^^^^^^^^^^^^^^^
+...
+455 |     fn check_process_injection(&self, pid: Pid) -> bool {
+    |        ^^^^^^^^^^^^^^^^^^^^^^^
+...
+549 |     fn check_hidden_modules(&self, pid: Pid) -> bool {
+    |        ^^^^^^^^^^^^^^^^^^^^
+...
+572 |     fn check_suspicious_threads(&self, pid: Pid) -> bool {
+    |        ^^^^^^^^^^^^^^^^^^^^^^^^
+...
+610 |     fn evaluate_threat_level(&self, suspicious_regions: &[MemoryRegion], behaviors: &HashMap<String, bool>) -> (bool, String, u8) {
+    |        ^^^^^^^^^^^^^^^^^^^^^
+...
+653 |     pub fn terminate_process(&self, pid: Pid) -> bool {
+    |            ^^^^^^^^^^^^^^^^^
+...
+675 |     pub fn suspend_process(&self, pid: Pid) -> bool {
+    |            ^^^^^^^^^^^^^^^
+...
+716 |     pub fn resume_process(&self, pid: Pid) -> bool {
+    |            ^^^^^^^^^^^^^^
+...
+757 |     pub fn get_process_list(&self) -> Vec<ProcessInfo> {
+    |            ^^^^^^^^^^^^^^^^
+...
+779 |     pub fn terminate_process_tree(&self, pid: Pid) -> bool {
+    |            ^^^^^^^^^^^^^^^^^^^^^^
+
+warning: struct `ProcessEvent` is never constructed
+  --> src\process_monitor.rs:12:12
+   |
+12 | pub struct ProcessEvent {
+   |            ^^^^^^^^^^^^
+
+warning: enum `ProcessEventType` is never used
+  --> src\process_monitor.rs:19:10
+   |
+19 | pub enum ProcessEventType {
+   |          ^^^^^^^^^^^^^^^^
+
+warning: struct `ProcessMonitor` is never constructed
+  --> src\process_monitor.rs:25:12
+   |
+25 | pub struct ProcessMonitor {
+   |            ^^^^^^^^^^^^^^
+
+warning: associated items `new`, `start_monitoring`, `scan_new_process`, `perform_periodic_memory_scan`, and `stop` are never used
+   --> src\process_monitor.rs:33:12
+    |
+ 32 | impl ProcessMonitor {
+    | ------------------- associated items in this implementation
+ 33 |     pub fn new(engine: Arc<AntivirusEngine>) -> Self {
+    |            ^^^
+...
+ 42 |     pub fn start_monitoring(&mut self) -> Receiver<ProcessEvent> {
+    |            ^^^^^^^^^^^^^^^^
+...
+ 87 |     fn scan_new_process(
+    |        ^^^^^^^^^^^^^^^^
+...
+142 |     fn perform_periodic_memory_scan(
+    |        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+...
+168 |     pub fn stop(&self) {
+    |            ^^^^
+
+warning: method `get_system` is never used
+   --> src\process_monitor.rs:175:12
+    |
+174 | impl MemoryScanner {
+    | ------------------ method in this implementation
+175 |     pub fn get_system(&self) -> &System {
+    |            ^^^^^^^^^^
+
+warning: function `format_file_size` is never used
+  --> src\utils.rs:14:8
+   |
+14 | pub fn format_file_size(size: u64) -> String {
+   |        ^^^^^^^^^^^^^^^^
+
+warning: function `get_system_info` is never used
+  --> src\utils.rs:32:8
+   |
+32 | pub fn get_system_info() -> String {
+   |        ^^^^^^^^^^^^^^^
+
+warning: struct `ThreatAlert` is never constructed
+  --> src\ipc\mod.rs:14:12
+   |
+14 | pub struct ThreatAlert {
+   |            ^^^^^^^^^^^
+
+warning: struct `ConfigUpdate` is never constructed
+  --> src\ipc\mod.rs:39:12
+   |
+39 | pub struct ConfigUpdate {
+   |            ^^^^^^^^^^^^
+
+warning: enum `IpcMessage` is never used
+  --> src\ipc\mod.rs:55:10
+   |
+55 | pub enum IpcMessage {
+   |          ^^^^^^^^^^
+
+warning: associated items `encode` and `decode` are never used
+  --> src\ipc\mod.rs:74:12
+   |
+72 | impl IpcMessage {
+   | --------------- associated items in this implementation
+73 |     /// Serialize to binary using bincode
+74 |     pub fn encode(&self) -> Result<Vec<u8>, bincode::Error> {
+   |            ^^^^^^
+...
+79 |     pub fn decode(data: &[u8]) -> Result<Self, bincode::Error> {
+   |            ^^^^^^
+
+warning: constant `THREAT_ALERT_PIPE` is never used
+  --> src\ipc\mod.rs:85:11
+   |
+85 | pub const THREAT_ALERT_PIPE: &str = r"\.\pipe\wenle_threat_alerts";
+   |           ^^^^^^^^^^^^^^^^^
+
+warning: constant `CONFIG_UPDATE_PIPE` is never used
+  --> src\ipc\mod.rs:86:11
+   |
+86 | pub const CONFIG_UPDATE_PIPE: &str = r"\.\pipe\wenle_config";
+   |           ^^^^^^^^^^^^^^^^^^
+
+warning: constant `HEARTBEAT_PIPE` is never used
+  --> src\ipc\mod.rs:87:11
+   |
+87 | pub const HEARTBEAT_PIPE: &str = r"\.\pipe\wenle_heartbeat";
+   |           ^^^^^^^^^^^^^^
+
+warning: constant `PIPE_ACCESS_DUPLEX` is never used
+  --> src\ipc\named_pipe.rs:18:7
+   |
+18 | const PIPE_ACCESS_DUPLEX: u32 = 0x00000003;
+   |       ^^^^^^^^^^^^^^^^^^
+
+warning: constant `PIPE_TYPE_BYTE` is never used
+  --> src\ipc\named_pipe.rs:19:7
+   |
+19 | const PIPE_TYPE_BYTE: u32 = 0x00000000;
+   |       ^^^^^^^^^^^^^^
+
+warning: constant `PIPE_WAIT` is never used
+  --> src\ipc\named_pipe.rs:20:7
+   |
+20 | const PIPE_WAIT: u32 = 0x00000000;
+   |       ^^^^^^^^^
+
+warning: struct `NamedPipeServer` is never constructed
+  --> src\ipc\named_pipe.rs:23:12
+   |
+23 | pub struct NamedPipeServer {
+   |            ^^^^^^^^^^^^^^^
+
+warning: struct `NamedPipeClient` is never constructed
+  --> src\ipc\named_pipe.rs:29:12
+   |
+29 | pub struct NamedPipeClient {
+   |            ^^^^^^^^^^^^^^^
+
+warning: associated items `new`, `pipe_name`, `accept`, and `string_to_wstring` are never used
+  --> src\ipc\named_pipe.rs:35:12
+   |
+33 | impl NamedPipeServer {
+   | -------------------- associated items in this implementation
+34 |     /// Create a new named pipe server (listener)
+35 |     pub fn new(pipe_name: &str) -> io::Result<Self> {
+   |            ^^^
+...
+65 |     pub fn pipe_name(&self) -> &str {
+   |            ^^^^^^^^^
+...
+70 |     pub fn accept(&mut self) -> io::Result<NamedPipeConnection> {
+   |            ^^^^^^
+...
+92 |     fn string_to_wstring(s: &str) -> Vec<u16> {
+   |        ^^^^^^^^^^^^^^^^^
+
+warning: struct `NamedPipeConnection` is never constructed
+   --> src\ipc\named_pipe.rs:111:12
+    |
+111 | pub struct NamedPipeConnection {
+    |            ^^^^^^^^^^^^^^^^^^^
+
+warning: methods `read_message` and `write_message` are never used
+   --> src\ipc\named_pipe.rs:117:12
+    |
+115 | impl NamedPipeConnection {
+    | ------------------------ methods in this implementation
+116 |     /// Read a message from the pipe
+117 |     pub fn read_message(&mut self, buffer: &mut [u8]) -> io::Result<usize> {
+    |            ^^^^^^^^^^^^
+...
+137 |     pub fn write_message(&mut self, data: &[u8]) -> io::Result<usize> {
+    |            ^^^^^^^^^^^^^
+
+warning: associated items `connect`, `read_message`, `write_message`, and `string_to_wstring` are never used
+   --> src\ipc\named_pipe.rs:176:12
+    |
+174 | impl NamedPipeClient {
+    | -------------------- associated items in this implementation
+175 |     /// Connect to an existing named pipe server
+176 |     pub fn connect(pipe_name: &str) -> io::Result<Self> {
+    |            ^^^^^^^
+...
+202 |     pub fn read_message(&mut self, buffer: &mut [u8]) -> io::Result<usize> {
+    |            ^^^^^^^^^^^^
+...
+222 |     pub fn write_message(&mut self, data: &[u8]) -> io::Result<usize> {
+    |            ^^^^^^^^^^^^^
+...
+243 |     fn string_to_wstring(s: &str) -> Vec<u16> {
+    |        ^^^^^^^^^^^^^^^^^
+
+warning: struct `AntvirusConfig` is never constructed
+ --> src\config\mod.rs:9:12
+  |
+9 | pub struct AntvirusConfig {
+  |            ^^^^^^^^^^^^^^
+
+warning: associated items `load_from_file`, `save_to_file`, `should_scan_extension`, and `should_monitor_process` are never used
+   --> src\config\mod.rs:142:12
+    |
+140 | impl AntvirusConfig {
+    | ------------------- associated items in this implementation
+141 |     /// Load configuration from JSON file
+142 |     pub fn load_from_file(path: &Path) -> Result<Self, Box<dyn std::error::Error>> {
+    |            ^^^^^^^^^^^^^^
+...
+149 |     pub fn save_to_file(&self, path: &Path) -> Result<(), Box<dyn std::error::Error>> {
+    |            ^^^^^^^^^^^^
+...
+157 |     pub fn should_scan_extension(&self, path: &Path) -> bool {
+    |            ^^^^^^^^^^^^^^^^^^^^^
+...
+166 |     pub fn should_monitor_process(&self, process_name: &str) -> bool {
+    |            ^^^^^^^^^^^^^^^^^^^^^^
+
+warning: field `name` is never read
+  --> src\subprocess_manager.rs:13:9
+   |
+12 | pub struct MonitorInfo {
+   |            ----------- field in this struct
+13 |     pub name: String,
+   |         ^^^^
+   |
+   = note: `MonitorInfo` has derived impls for the traits `Clone` and `Debug`, but these are intentionally ignored during dead code analysis
+
+warning: constant `YARA_SCAN_FLAGS_SHOW_STRINGS` is never used
+  --> src\yara_sys.rs:11:11
+   |
+11 | pub const YARA_SCAN_FLAGS_SHOW_STRINGS: c_uint = 0x0001;
+   |           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: constant `YARA_SCAN_FLAGS_SHOW_METADATA` is never used
+  --> src\yara_sys.rs:12:11
+   |
+12 | pub const YARA_SCAN_FLAGS_SHOW_METADATA: c_uint = 0x0002;
+   |           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: constant `CALLBACK_MSG_RULE_NOT_MATCHING` is never used
+  --> src\yara_sys.rs:16:11
+   |
+16 | pub const CALLBACK_MSG_RULE_NOT_MATCHING: c_int = 2;
+   |           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: constant `CALLBACK_MSG_SCAN_FINISHED` is never used
+  --> src\yara_sys.rs:17:11
+   |
+17 | pub const CALLBACK_MSG_SCAN_FINISHED: c_int = 3;
+   |           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: constant `CALLBACK_ABORT` is never used
+  --> src\yara_sys.rs:20:11
+   |
+20 | pub const CALLBACK_ABORT: c_int = 1;
+   |           ^^^^^^^^^^^^^^
+
+warning: struct `YR_SCANNER` is never constructed
+  --> src\yara_sys.rs:51:12
+   |
+51 | pub struct YR_SCANNER {
+   |            ^^^^^^^^^^
+
+warning: struct `YR_RULE` is never constructed
+  --> src\yara_sys.rs:61:12
+   |
+61 | pub struct YR_RULE {
+   |            ^^^^^^^
+
+warning: struct `YR_STRING` is never constructed
+  --> src\yara_sys.rs:66:12
+   |
+66 | pub struct YR_STRING {
+   |            ^^^^^^^^^
+
+warning: struct `YR_MATCH` is never constructed
+  --> src\yara_sys.rs:71:12
+   |
+71 | pub struct YR_MATCH {
+   |            ^^^^^^^^
+
+warning: struct `YR_RULE_MATCH` is never constructed
+  --> src\yara_sys.rs:77:12
+   |
+77 | pub struct YR_RULE_MATCH {
+   |            ^^^^^^^^^^^^^
+
+warning: function `extract_matched_rules` is never used
+   --> src\yara_sys.rs:189:8
+    |
+189 | pub fn extract_matched_rules(_rules: *mut YR_RULES) -> Result<Vec<String>, String> {
+    |        ^^^^^^^^^^^^^^^^^^^^^
+
+warning: function `scan_callback` is never used
+   --> src\yara_sys.rs:196:15
+    |
+196 | extern "C" fn scan_callback(
+    |               ^^^^^^^^^^^^^
+
+warning: function `scan_file_with_callback` is never used
+   --> src\yara_sys.rs:222:8
+    |
+222 | pub fn scan_file_with_callback(path: &str, rules: *mut YR_RULES) -> Result<Vec<String>, String> {
+    |        ^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: function `yr_rules_scan_mem` is never used
+   --> src\yara_sys.rs:118:12
+    |
+118 |     pub fn yr_rules_scan_mem(
+    |            ^^^^^^^^^^^^^^^^^
+
+warning: function `yr_get_last_error` is never used
+   --> src\yara_sys.rs:129:12
+    |
+129 |     pub fn yr_get_last_error() -> c_int;
+    |            ^^^^^^^^^^^^^^^^^
+
+warning: fields `namespace`, `is_private`, and `matched` are never read
+  --> src\yara_engine.rs:35:9
+   |
+33 | pub struct YaraMatch {
+   |            --------- fields in this struct
+34 |     pub rule_name: String,
+35 |     pub namespace: String,
+   |         ^^^^^^^^^
+36 |     pub is_private: bool,
+   |         ^^^^^^^^^^
+37 |     pub matched: bool,
+   |         ^^^^^^^
+   |
+   = note: `YaraMatch` has derived impls for the traits `Clone` and `Debug`, but these are intentionally ignored during dead code analysis
+
+warning: field `scan_time_ms` is never read
+  --> src\yara_engine.rs:44:9
+   |
+42 | pub struct YaraScanResult {
+   |            -------------- field in this struct
+43 |     pub matched_rules: Vec<YaraMatch>,
+44 |     pub scan_time_ms: u64,
+   |         ^^^^^^^^^^^^
+   |
+   = note: `YaraScanResult` has derived impls for the traits `Clone` and `Debug`, but these are intentionally ignored during dead code analysis
+
+warning: method `scan_mem` is never used
+   --> src\yara_engine.rs:179:12
+    |
+ 65 | impl YaraEngine {
+    | --------------- method in this implementation
+...
+179 |     pub fn scan_mem(&self, buffer: &[u8]) -> Result<YaraScanResult, String> {
+    |            ^^^^^^^^
+
+warning: struct `ScanFile` is never constructed
+  --> src\yara_integration.rs:10:12
+   |
+10 | pub struct ScanFile {
+   |            ^^^^^^^^
+
+warning: struct `ScanMemory` is never constructed
+  --> src\yara_integration.rs:17:12
+   |
+17 | pub struct ScanMemory {
+   |            ^^^^^^^^^^
+
+warning: struct `YaraFullScanResult` is never constructed
+  --> src\yara_integration.rs:26:12
+   |
+26 | pub struct YaraFullScanResult {
+   |            ^^^^^^^^^^^^^^^^^^
+
+warning: struct `FileScanner` is never constructed
+  --> src\yara_integration.rs:37:12
+   |
+37 | pub struct FileScanner {
+   |            ^^^^^^^^^^^
+
+warning: associated items `new`, `scan_file`, `scan_directory`, and `should_skip_file` are never used
+   --> src\yara_integration.rs:42:12
+    |
+ 41 | impl FileScanner {
+    | ---------------- associated items in this implementation
+ 42 |     pub fn new(engine: Arc<YaraEngine>) -> Self {
+    |            ^^^
+...
+ 47 |     pub fn scan_file(&self, file_path: &Path) -> Result<YaraFullScanResult, String> {
+    |            ^^^^^^^^^
+...
+ 84 |     pub fn scan_directory(&self, dir_path: &Path) -> Result<Vec<YaraFullScanResult>, String> {
+    |            ^^^^^^^^^^^^^^
+...
+108 |     fn should_skip_file(&self, path: &Path) -> bool {
+    |        ^^^^^^^^^^^^^^^^
+
+warning: struct `MemoryScanner` is never constructed
+   --> src\yara_integration.rs:120:12
+    |
+120 | pub struct MemoryScanner {
+    |            ^^^^^^^^^^^^^
+
+warning: associated items `new` and `scan_process` are never used
+   --> src\yara_integration.rs:125:12
+    |
+124 | impl MemoryScanner {
+    | ------------------ associated items in this implementation
+125 |     pub fn new(engine: Arc<YaraEngine>) -> Self {
+    |            ^^^
+...
+131 |     pub fn scan_process(&self, pid: u32, process_name: &str) -> Result<YaraFullScanResult, String> {
+    |            ^^^^^^^^^^^^
+
+warning: struct `QuarantineManager` is never constructed
+   --> src\yara_integration.rs:192:12
+    |
+192 | pub struct QuarantineManager {
+    |            ^^^^^^^^^^^^^^^^^
+
+warning: associated items `new`, `quarantine_file`, `list_quarantined`, and `restore_file` are never used
+   --> src\yara_integration.rs:197:12
+    |
+196 | impl QuarantineManager {
+    | ---------------------- associated items in this implementation
+197 |     pub fn new(quarantine_dir: PathBuf) -> Result<Self, String> {
+    |            ^^^
+...
+206 |     pub fn quarantine_file(&self, source_path: &Path, threat_name: &str) -> Result<PathBuf, String> {
+    |            ^^^^^^^^^^^^^^^
+...
+226 |     pub fn list_quarantined(&self) -> Result<Vec<PathBuf>, String> {
+    |            ^^^^^^^^^^^^^^^^
+...
+239 |     pub fn restore_file(&self, quarantine_path: &Path, restore_to: &Path) -> Result<(), String> {
+    |            ^^^^^^^^^^^^
+
+warning: struct `YaraIntegrationHelper` is never constructed
+  --> src\yara_integration_helpers.rs:11:12
+   |
+11 | pub struct YaraIntegrationHelper {
+   |            ^^^^^^^^^^^^^^^^^^^^^
+
+warning: associated items `new`, `quick_scan_file`, `detailed_scan_file`, `batch_scan_files`, and `scan_memory_buffer` are never used
+  --> src\yara_integration_helpers.rs:17:12
+   |
+15 | impl YaraIntegrationHelper {
+   | -------------------------- associated items in this implementation
+16 |     /// 創建新的 YARA 集成助手
+17 |     pub fn new(rules_path: &str) -> Result<Self, String> {
+   |            ^^^
+...
+28 |     pub fn quick_scan_file(&self, file_path: &Path) -> Result<(bool, Vec<String>), String> {
+   |            ^^^^^^^^^^^^^^^
+...
+50 |     pub fn detailed_scan_file(&self, file_path: &Path) -> Result<ScanDetail, String> {
+   |            ^^^^^^^^^^^^^^^^^^
+...
+67 |     pub fn batch_scan_files(&self, file_paths: &[&Path]) -> Result<Vec<ScanDetail>, String> {
+   |            ^^^^^^^^^^^^^^^^
+...
+81 |     pub fn scan_memory_buffer(&self, buffer: &[u8]) -> Result<(bool, Vec<String>), String> {
+   |            ^^^^^^^^^^^^^^^^^^
+
+warning: struct `ScanDetail` is never constructed
+  --> src\yara_integration_helpers.rs:94:12
+   |
+94 | pub struct ScanDetail {
+   |            ^^^^^^^^^^
+
+warning: fields `quarantine_dir`, `entries`, `audit_log`, `audit_log_path`, and `encryption_enabled` are never read
+  --> src\quarantine_manager.rs:39:5
+   |
+38 | pub struct QuarantineManager {
+   |            ----------------- fields in this struct
+39 |     quarantine_dir: PathBuf,
+   |     ^^^^^^^^^^^^^^
+40 |     entries: Vec<QuarantineEntry>,
+   |     ^^^^^^^
+41 |     audit_log: Vec<AuditLogEntry>,
+   |     ^^^^^^^^^
+42 |     audit_log_path: PathBuf,
+   |     ^^^^^^^^^^^^^^
+43 |     encryption_enabled: bool,
+   |     ^^^^^^^^^^^^^^^^^^
+
+warning: multiple associated items are never used
+   --> src\quarantine_manager.rs:72:8
+    |
+ 46 | impl QuarantineManager {
+    | ---------------------- associated items in this implementation
+...
+ 72 |     fn calculate_file_hash(file_path: &Path) -> io::Result<String> {
+    |        ^^^^^^^^^^^^^^^^^^^
+...
+ 81 |     fn get_file_signature(file_path: &Path) -> Option<String> {
+    |        ^^^^^^^^^^^^^^^^^^
+...
+ 99 |     fn simple_encrypt(data: &[u8], key: &[u8]) -> (Vec<u8>, Vec<u8>) {
+    |        ^^^^^^^^^^^^^^
+...
+117 |     fn simple_decrypt(encrypted_data: &[u8], key: &[u8], iv: &[u8]) -> Vec<u8> {
+    |        ^^^^^^^^^^^^^^
+...
+131 |     pub fn isolate_file(
+    |            ^^^^^^^^^^^^
+...
+211 |     pub fn restore_file(&mut self, quarantine_hash: &str, operator: &str) -> io::Result<()> {
+    |            ^^^^^^^^^^^^
+...
+291 |     pub fn quarantine_directory(
+    |            ^^^^^^^^^^^^^^^^^^^^
+...
+329 |     pub fn list_entries(&self) -> &[QuarantineEntry] {
+    |            ^^^^^^^^^^^^
+...
+334 |     pub fn get_audit_log(&self) -> &[AuditLogEntry] {
+    |            ^^^^^^^^^^^^^
+...
+339 |     fn save_audit_log(&self) -> io::Result<()> {
+    |        ^^^^^^^^^^^^^^
+...
+347 |     pub fn purge_all(&mut self, operator: &str) -> io::Result<()> {
+    |            ^^^^^^^^^
+
+warning: `rust_antivirus` (bin "yara_diagnostic") generated 1 warning (run `cargo fix --bin "yara_diagnostic" -p rust_antivirus` to apply 1 suggestion)
+warning: `rust_antivirus` (bin "yara_test") generated 2 warnings (run `cargo fix --bin "yara_test" -p rust_antivirus` to apply 2 suggestions)
+warning: `rust_antivirus` (bin "test_self_scan") generated 1 warning (run `cargo fix --bin "test_self_scan" -p rust_antivirus` to apply 1 suggestion)
+warning: `rust_antivirus` (bin "yara_scan_example") generated 1 warning (run `cargo fix --bin "yara_scan_example" -p rust_antivirus` to apply 1 suggestion)
+warning: `rust_antivirus` (bin "memory_monitor") generated 5 warnings (run `cargo fix --bin "memory_monitor" -p rust_antivirus` to apply 5 suggestions)
+warning: `rust_antivirus` (bin "file_monitor") generated 3 warnings (run `cargo fix --bin "file_monitor" -p rust_antivirus` to apply 3 suggestions)
+warning: `rust_antivirus` (bin "wenle-antivirus") generated 75 warnings (4 duplicates) (run `cargo fix --bin "wenle-antivirus" -p rust_antivirus` to apply 3 suggestions)
+    Finished `release` profile [optimized] target(s) in 15.33s

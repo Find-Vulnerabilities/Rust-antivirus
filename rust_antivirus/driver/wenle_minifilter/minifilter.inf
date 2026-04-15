@@ -1,0 +1,56 @@
+[Version]
+Signature="$WINDOWS NT$"
+Class=ActivityMonitor
+ClassGuid={b86dff51-a31e-4bac-b3cf-e8cff4cc052e}
+Provider=%ManufacturerName%
+DriverVer=04/12/2026,2.0.0.0
+CatalogFile=minifilter.cat
+
+[Manufacturer]
+%ManufacturerName%=Standard,NTx86,NTamd64
+
+[Standard.NTx86]
+%FilterName.DeviceDesc%=MinifilterInstall, WenleMinifilter
+
+[Standard.NTamd64]
+%FilterName.DeviceDesc%=MinifilterInstall, WenleMinifilter
+
+[MinifilterInstall]
+CopyFiles=MinifilterCopyFiles
+
+[MinifilterCopyFiles]
+minifilter.sys
+
+[SourceDisksFiles]
+minifilter.sys=1
+
+[SourceDisksNames]
+1="Wenle Minifilter Install Disk"
+
+[DestinationDirs]
+MinifilterCopyFiles=12
+
+[DefaultInstall]
+OptionDesc=%FilterName.DeviceDesc%
+Addreg=MinifilterAddRegistry
+
+[DefaultInstall.Services]
+AddService=%ServiceName%,,MinifilterService
+
+[MinifilterService]
+DisplayName=%ServiceName%
+ServiceType=2
+StartType=1
+ErrorControl=1
+ServiceBinary=%12%\minifilter.sys
+LoadOrderGroup=FSFilter Activity Monitor
+
+[MinifilterAddRegistry]
+HKLM,"SYSTEM\CurrentControlSet\Services\WenleMinifilter\Instances","DefaultInstance",0,"WenleMinifilter Instance"
+HKLM,"SYSTEM\CurrentControlSet\Services\WenleMinifilter\Instances\WenleMinifilter Instance","Altitude",0,"385190"
+HKLM,"SYSTEM\CurrentControlSet\Services\WenleMinifilter\Instances\WenleMinifilter Instance","Flags",0x00010001,0
+
+[Strings]
+ManufacturerName="Wenle Security"
+ServiceName="WenleMinifilter"
+FilterName.DeviceDesc="Wenle Antivirus Minifilter Driver"

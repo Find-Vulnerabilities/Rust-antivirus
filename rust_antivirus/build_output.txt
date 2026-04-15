@@ -1,0 +1,904 @@
+       Fresh unicode-ident v1.0.24
+       Fresh windows-link v0.2.1
+       Fresh cfg-if v1.0.4
+       Fresh windows-link v0.1.3
+       Fresh stable_deref_trait v1.2.1
+       Fresh version_check v0.9.5
+       Fresh autocfg v1.5.0
+       Fresh smallvec v1.15.1
+       Fresh cfg_aliases v0.2.1
+       Fresh memchr v2.8.0
+       Fresh bitflags v2.11.0
+       Fresh proc-macro2 v1.0.106
+       Fresh windows-result v0.3.4
+       Fresh pin-project-lite v0.2.17
+       Fresh windows-strings v0.4.2
+       Fresh windows-sys v0.61.2
+       Fresh litemap v0.8.1
+       Fresh writeable v0.6.2
+       Fresh log v0.4.29
+       Fresh xml-rs v0.8.28
+       Fresh quote v1.0.45
+       Fresh windows_x86_64_msvc v0.52.6
+       Fresh khronos_api v3.1.0
+       Fresh once_cell v1.21.3
+       Fresh scopeguard v1.2.0
+       Fresh simd-adler32 v0.3.8
+       Fresh windows-threading v0.1.0
+       Fresh syn v2.0.117
+       Fresh windows-targets v0.52.6
+       Fresh gl_generator v0.14.0
+       Fresh windows_x86_64_msvc v0.53.1
+       Fresh icu_normalizer_data v2.1.1
+       Fresh lock_api v0.4.14
+       Fresh num-traits v0.2.19
+       Fresh parking_lot_core v0.9.12
+       Fresh raw-window-handle v0.6.2
+       Fresh equivalent v1.0.2
+       Fresh synstructure v0.13.2
+       Fresh zerovec-derive v0.11.2
+       Fresh windows-interface v0.59.3
+       Fresh displaydoc v0.2.5
+       Fresh bytemuck_derive v1.10.2
+       Fresh windows-implement v0.60.2
+       Fresh windows-sys v0.52.0
+       Fresh windows-targets v0.53.5
+       Fresh icu_properties_data v2.1.2
+       Fresh accesskit v0.21.1
+       Fresh adler2 v2.0.1
+       Fresh ttf-parser v0.25.1
+       Fresh foldhash v0.1.5
+       Fresh unicode-segmentation v1.12.0
+       Fresh allocator-api2 v0.2.21
+       Fresh zerocopy v0.8.40
+       Fresh zerofrom-derive v0.1.6
+       Fresh yoke-derive v0.8.1
+       Fresh bytemuck v1.25.0
+       Fresh windows-core v0.61.2
+       Fresh owned_ttf_parser v0.25.1
+       Fresh hashbrown v0.15.5
+       Fresh miniz_oxide v0.8.9
+       Fresh crossbeam-utils v0.8.21
+       Fresh crc32fast v1.5.0
+       Fresh ab_glyph_rasterizer v0.1.10
+       Fresh tracing-core v0.1.36
+       Fresh zerofrom v0.1.6
+       Fresh windows-future v0.2.1
+       Fresh emath v0.33.3
+       Fresh windows-collections v0.2.0
+       Fresh windows-numerics v0.2.0
+       Fresh ab_glyph v0.2.32
+       Fresh tracing v0.1.44
+       Fresh serde_core v1.0.228
+       Fresh flate2 v1.1.9
+       Fresh typenum v1.19.0
+       Fresh ahash v0.8.12
+       Fresh parking_lot v0.12.5
+       Fresh yoke v0.8.1
+       Fresh windows v0.61.3
+       Fresh ecolor v0.33.3
+       Fresh fdeflate v0.3.7
+       Fresh shlex v1.3.0
+       Fresh pxfm v0.1.28
+       Fresh futures-sink v0.3.32
+       Fresh smol_str v0.2.2
+       Fresh utf8_iter v1.0.4
+       Fresh percent-encoding v2.3.2
+       Fresh futures-core v0.3.32
+       Fresh nohash-hasher v0.2.0
+       Fresh dpi v0.1.2
+       Fresh profiling v1.0.17
+       Fresh zerovec v0.11.5
+       Fresh zerotrie v0.2.3
+       Fresh epaint_default_fonts v0.33.3
+       Fresh find-msvc-tools v0.1.9
+       Fresh cursor-icon v1.2.0
+       Fresh form_urlencoded v1.2.2
+       Fresh moxcms v0.7.11
+       Fresh png v0.18.1
+       Fresh futures-channel v0.3.32
+       Fresh generic-array v0.14.7
+       Fresh accesskit_consumer v0.31.0
+       Fresh serde_derive v1.0.228
+       Fresh tinystr v0.8.2
+       Fresh potential_utf v0.1.4
+       Fresh cc v1.2.56
+       Fresh epaint v0.33.3
+       Fresh winit v0.30.13
+       Fresh futures-macro v0.3.32
+       Fresh aho-corasick v1.1.4
+       Fresh futures-task v0.3.32
+       Fresh futures-io v0.3.32
+       Fresh regex-syntax v0.8.10
+       Fresh static_assertions v1.1.0
+       Fresh error-code v3.3.2
+       Fresh icu_locale_core v2.1.1
+       Fresh icu_collections v2.1.1
+       Fresh slab v0.4.12
+       Fresh byteorder-lite v0.1.0
+       Fresh egui v0.33.3
+       Fresh accesskit_windows v0.29.2
+       Fresh clipboard-win v5.4.1
+       Fresh regex-automata v0.4.14
+       Fresh glutin_egl_sys v0.7.1
+       Fresh serde v1.0.228
+       Fresh windows_x86_64_msvc v0.48.5
+       Fresh icu_provider v2.1.1
+       Fresh futures-util v0.3.32
+       Fresh image v0.25.9
+       Fresh glutin_wgl_sys v0.6.1
+       Fresh crossbeam-epoch v0.9.18
+       Fresh windows-sys v0.60.2
+       Fresh windows-implement v0.59.0
+       Fresh winapi-util v0.1.11
+       Fresh libloading v0.8.9
+       Fresh windows-strings v0.3.1
+       Fresh utf8parse v0.2.2
+       Fresh icu_properties v2.1.2
+       Fresh icu_normalizer v2.1.1
+       Fresh anstyle v1.0.13
+       Fresh once_cell_polyfill v1.70.2
+       Fresh same-file v1.0.6
+       Fresh windows-core v0.59.0
+       Fresh anstyle-parse v0.2.7
+       Fresh futures-executor v0.3.32
+       Fresh crossbeam-deque v0.8.6
+       Fresh arboard v3.6.1
+       Fresh glutin v0.32.3
+       Fresh idna_adapter v1.2.1
+       Fresh anstyle-wincon v3.0.11
+       Fresh regex v1.12.3
+       Fresh winapi v0.3.9
+       Fresh memoffset v0.9.1
+       Fresh accesskit_winit v0.29.2
+       Fresh libc v0.2.182
+       Fresh windows-targets v0.48.5
+       Fresh crypto-common v0.1.7
+       Fresh block-buffer v0.10.4
+       Fresh thiserror-impl v2.0.18
+       Fresh anstyle-query v1.1.5
+       Fresh is_terminal_polyfill v1.70.2
+       Fresh idna v1.1.0
+       Fresh glow v0.16.0
+       Fresh colorchoice v1.0.4
+       Fresh web-time v1.1.0
+       Fresh litrs v1.0.0
+       Fresh env_filter v1.0.0
+       Fresh thiserror v2.0.18
+       Fresh digest v0.10.7
+       Fresh ntapi v0.4.3
+       Fresh windows-sys v0.48.0
+       Fresh windows v0.59.0
+       Fresh zmij v1.0.21
+       Fresh rayon-core v1.13.0
+       Fresh url v2.5.8
+       Fresh egui_glow v0.33.3
+       Fresh document-features v0.2.12
+       Fresh anstream v0.6.21
+       Fresh futures v0.3.32
+       Fresh glutin-winit v0.5.0
+       Fresh walkdir v2.5.0
+       Fresh chrono v0.4.44
+       Fresh crossbeam-channel v0.5.15
+       Fresh windows-sys v0.59.0
+       Fresh filetime v0.2.27
+       Fresh getrandom v0.2.17
+       Fresh hashbrown v0.14.5
+       Fresh untrusted v0.9.0
+warning: unused variable: `profile`
+  --> build.rs:10:9
+   |
+10 |     let profile = env::var("PROFILE").unwrap();
+   |         ^^^^^^^ help: if this is intentional, prefix it with an underscore: `_profile`
+   |
+   = note: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused variable: `yara_build_dir`
+  --> build.rs:15:9
+   |
+15 |     let yara_build_dir = manifest_dir.join("third_party").join("yara").join("build");
+   |         ^^^^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_yara_build_dir`
+
+warning: `rust_antivirus` (build script) generated 2 warnings
+       Fresh webbrowser v1.1.0
+       Fresh itoa v1.0.17
+       Fresh either v1.15.0
+       Fresh jiff v0.2.23
+       Fresh cpufeatures v0.2.17
+       Fresh rfd v0.15.4
+       Fresh ring v0.17.14
+       Dirty rust_antivirus v0.2.0-enterprise (C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus): the precalculated components changed
+   Compiling rust_antivirus v0.2.0-enterprise (C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus)
+       Fresh notify v6.1.1
+       Fresh dashmap v5.5.3
+       Fresh wmi v0.14.5
+       Fresh sysinfo v0.37.2
+       Fresh anyhow v1.0.102
+       Fresh bincode v1.3.3
+       Fresh lru v0.12.5
+       Fresh tokio v1.50.0
+     Running `C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\build\rust_antivirus-29719976664e794f\build-script-build`
+       Fresh egui-winit v0.33.3
+       Fresh serde_json v1.0.149
+       Fresh rayon v1.11.0
+       Fresh sha2 v0.10.9
+       Fresh env_logger v0.11.9
+       Fresh ctrlc v3.5.2
+       Fresh hex v0.4.3
+       Fresh eframe v0.33.3
+warning: rust_antivirus@0.2.0-enterprise: Building for Windows with YARA support
+warning: rust_antivirus@0.2.0-enterprise: Precompiled YARA library not found at: C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\third_party\yara\lib\x64\Release\yara.lib
+warning: rust_antivirus@0.2.0-enterprise: Please compile YARA first using build_yara.ps1
+warning: rust_antivirus@0.2.0-enterprise: YARA FFI bindings ready (hand-written)
+     Running `C:\Users\wen 整人\.rustup\toolchains\stable-x86_64-pc-windows-msvc\bin\rustc.exe --crate-name yara_scan_example --edition=2021 src\bin\yara_scan_example.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type bin --emit=dep-info,link -C embed-bitcode=no -C debuginfo=2 --cfg "feature=\"default\"" --check-cfg cfg(docsrs,test) --check-cfg "cfg(feature, values(\"default\"))" -C metadata=732f2a998ce25811 --out-dir "C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps" -C "incremental=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\incremental" -L "dependency=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps" --extern "anyhow=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libanyhow-7010c653578628de.rlib" --extern "bincode=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libbincode-58a8e0a8f37eecbd.rlib" --extern "chrono=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libchrono-2ac54349ce9f1bce.rlib" --extern "crossbeam_channel=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libcrossbeam_channel-6b095608c42a1ce1.rlib" --extern "ctrlc=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libctrlc-59e7529652f850e5.rlib" --extern "dashmap=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libdashmap-168895d01ada3da3.rlib" --extern "eframe=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libeframe-965b5a97a0b73a34.rlib" --extern "egui=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libegui-e7290d94d1fc7f04.rlib" --extern "env_logger=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libenv_logger-dc2f71be477004a5.rlib" --extern "hex=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libhex-d0b310f6f86bbf02.rlib" --extern "log=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\liblog-93586a77b2bd1549.rlib" --extern "lru=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\liblru-6eb511740e48d522.rlib" --extern "notify=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libnotify-34f87d2f970f3590.rlib" --extern "parking_lot=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libparking_lot-dd6caca741276d3d.rlib" --extern "rayon=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\librayon-24e5ded2bad62b4d.rlib" --extern "rfd=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\librfd-e04b47914d4b7947.rlib" --extern "ring=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libring-2669d664f8b01c4b.rlib" --extern "serde=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libserde-75a27f22f4d55de1.rlib" --extern "serde_json=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libserde_json-f1db0656a2f3938d.rlib" --extern "sha2=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libsha2-701c7bcdb8bbbcff.rlib" --extern "sysinfo=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libsysinfo-7e6d109ede6a2186.rlib" --extern "tokio=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libtokio-fcda9b830a063646.rlib" --extern "walkdir=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libwalkdir-8f3f01cd415bf704.rlib" --extern "winapi=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libwinapi-104480937783e048.rlib" --extern "wmi=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libwmi-377b6bea2b4ed49a.rlib" -L "native=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\build\ring-0198a9829c04966a\out" -L "native=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\third_party\yara\yara-4.5.5\libyara\include" -L "native=C:\Users\wen 整人\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\windows_x86_64_msvc-0.52.6\lib" -L "native=C:\Users\wen 整人\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\windows_x86_64_msvc-0.53.1\lib" -L "native=C:\Users\wen 整人\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\windows_x86_64_msvc-0.48.5\lib" -l dylib=advapi32 -l dylib=user32 --cfg yara_stub`
+     Running `C:\Users\wen 整人\.rustup\toolchains\stable-x86_64-pc-windows-msvc\bin\rustc.exe --crate-name wenle_antivirus --edition=2021 src\main.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type bin --emit=dep-info,link -C embed-bitcode=no -C debuginfo=2 --cfg "feature=\"default\"" --check-cfg cfg(docsrs,test) --check-cfg "cfg(feature, values(\"default\"))" -C metadata=4fbdc7c246e3899e --out-dir "C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps" -C "incremental=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\incremental" -L "dependency=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps" --extern "anyhow=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libanyhow-7010c653578628de.rlib" --extern "bincode=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libbincode-58a8e0a8f37eecbd.rlib" --extern "chrono=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libchrono-2ac54349ce9f1bce.rlib" --extern "crossbeam_channel=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libcrossbeam_channel-6b095608c42a1ce1.rlib" --extern "ctrlc=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libctrlc-59e7529652f850e5.rlib" --extern "dashmap=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libdashmap-168895d01ada3da3.rlib" --extern "eframe=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libeframe-965b5a97a0b73a34.rlib" --extern "egui=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libegui-e7290d94d1fc7f04.rlib" --extern "env_logger=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libenv_logger-dc2f71be477004a5.rlib" --extern "hex=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libhex-d0b310f6f86bbf02.rlib" --extern "log=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\liblog-93586a77b2bd1549.rlib" --extern "lru=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\liblru-6eb511740e48d522.rlib" --extern "notify=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libnotify-34f87d2f970f3590.rlib" --extern "parking_lot=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libparking_lot-dd6caca741276d3d.rlib" --extern "rayon=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\librayon-24e5ded2bad62b4d.rlib" --extern "rfd=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\librfd-e04b47914d4b7947.rlib" --extern "ring=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libring-2669d664f8b01c4b.rlib" --extern "serde=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libserde-75a27f22f4d55de1.rlib" --extern "serde_json=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libserde_json-f1db0656a2f3938d.rlib" --extern "sha2=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libsha2-701c7bcdb8bbbcff.rlib" --extern "sysinfo=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libsysinfo-7e6d109ede6a2186.rlib" --extern "tokio=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libtokio-fcda9b830a063646.rlib" --extern "walkdir=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libwalkdir-8f3f01cd415bf704.rlib" --extern "winapi=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libwinapi-104480937783e048.rlib" --extern "wmi=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libwmi-377b6bea2b4ed49a.rlib" -L "native=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\build\ring-0198a9829c04966a\out" -L "native=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\third_party\yara\yara-4.5.5\libyara\include" -L "native=C:\Users\wen 整人\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\windows_x86_64_msvc-0.52.6\lib" -L "native=C:\Users\wen 整人\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\windows_x86_64_msvc-0.53.1\lib" -L "native=C:\Users\wen 整人\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\windows_x86_64_msvc-0.48.5\lib" -l dylib=advapi32 -l dylib=user32 --cfg yara_stub`
+     Running `C:\Users\wen 整人\.rustup\toolchains\stable-x86_64-pc-windows-msvc\bin\rustc.exe --crate-name memory_monitor --edition=2021 src\bin\memory_monitor.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type bin --emit=dep-info,link -C embed-bitcode=no -C debuginfo=2 --cfg "feature=\"default\"" --check-cfg cfg(docsrs,test) --check-cfg "cfg(feature, values(\"default\"))" -C metadata=bd927b17e36ca258 --out-dir "C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps" -C "incremental=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\incremental" -L "dependency=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps" --extern "anyhow=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libanyhow-7010c653578628de.rlib" --extern "bincode=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libbincode-58a8e0a8f37eecbd.rlib" --extern "chrono=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libchrono-2ac54349ce9f1bce.rlib" --extern "crossbeam_channel=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libcrossbeam_channel-6b095608c42a1ce1.rlib" --extern "ctrlc=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libctrlc-59e7529652f850e5.rlib" --extern "dashmap=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libdashmap-168895d01ada3da3.rlib" --extern "eframe=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libeframe-965b5a97a0b73a34.rlib" --extern "egui=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libegui-e7290d94d1fc7f04.rlib" --extern "env_logger=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libenv_logger-dc2f71be477004a5.rlib" --extern "hex=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libhex-d0b310f6f86bbf02.rlib" --extern "log=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\liblog-93586a77b2bd1549.rlib" --extern "lru=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\liblru-6eb511740e48d522.rlib" --extern "notify=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libnotify-34f87d2f970f3590.rlib" --extern "parking_lot=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libparking_lot-dd6caca741276d3d.rlib" --extern "rayon=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\librayon-24e5ded2bad62b4d.rlib" --extern "rfd=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\librfd-e04b47914d4b7947.rlib" --extern "ring=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libring-2669d664f8b01c4b.rlib" --extern "serde=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libserde-75a27f22f4d55de1.rlib" --extern "serde_json=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libserde_json-f1db0656a2f3938d.rlib" --extern "sha2=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libsha2-701c7bcdb8bbbcff.rlib" --extern "sysinfo=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libsysinfo-7e6d109ede6a2186.rlib" --extern "tokio=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libtokio-fcda9b830a063646.rlib" --extern "walkdir=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libwalkdir-8f3f01cd415bf704.rlib" --extern "winapi=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libwinapi-104480937783e048.rlib" --extern "wmi=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libwmi-377b6bea2b4ed49a.rlib" -L "native=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\build\ring-0198a9829c04966a\out" -L "native=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\third_party\yara\yara-4.5.5\libyara\include" -L "native=C:\Users\wen 整人\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\windows_x86_64_msvc-0.52.6\lib" -L "native=C:\Users\wen 整人\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\windows_x86_64_msvc-0.53.1\lib" -L "native=C:\Users\wen 整人\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\windows_x86_64_msvc-0.48.5\lib" -l dylib=advapi32 -l dylib=user32 --cfg yara_stub`
+     Running `C:\Users\wen 整人\.rustup\toolchains\stable-x86_64-pc-windows-msvc\bin\rustc.exe --crate-name yara_integration --edition=2021 src\bin\yara_integration.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type bin --emit=dep-info,link -C embed-bitcode=no -C debuginfo=2 --cfg "feature=\"default\"" --check-cfg cfg(docsrs,test) --check-cfg "cfg(feature, values(\"default\"))" -C metadata=afb42afd61df6bed --out-dir "C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps" -C "incremental=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\incremental" -L "dependency=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps" --extern "anyhow=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libanyhow-7010c653578628de.rlib" --extern "bincode=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libbincode-58a8e0a8f37eecbd.rlib" --extern "chrono=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libchrono-2ac54349ce9f1bce.rlib" --extern "crossbeam_channel=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libcrossbeam_channel-6b095608c42a1ce1.rlib" --extern "ctrlc=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libctrlc-59e7529652f850e5.rlib" --extern "dashmap=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libdashmap-168895d01ada3da3.rlib" --extern "eframe=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libeframe-965b5a97a0b73a34.rlib" --extern "egui=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libegui-e7290d94d1fc7f04.rlib" --extern "env_logger=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libenv_logger-dc2f71be477004a5.rlib" --extern "hex=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libhex-d0b310f6f86bbf02.rlib" --extern "log=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\liblog-93586a77b2bd1549.rlib" --extern "lru=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\liblru-6eb511740e48d522.rlib" --extern "notify=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libnotify-34f87d2f970f3590.rlib" --extern "parking_lot=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libparking_lot-dd6caca741276d3d.rlib" --extern "rayon=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\librayon-24e5ded2bad62b4d.rlib" --extern "rfd=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\librfd-e04b47914d4b7947.rlib" --extern "ring=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libring-2669d664f8b01c4b.rlib" --extern "serde=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libserde-75a27f22f4d55de1.rlib" --extern "serde_json=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libserde_json-f1db0656a2f3938d.rlib" --extern "sha2=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libsha2-701c7bcdb8bbbcff.rlib" --extern "sysinfo=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libsysinfo-7e6d109ede6a2186.rlib" --extern "tokio=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libtokio-fcda9b830a063646.rlib" --extern "walkdir=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libwalkdir-8f3f01cd415bf704.rlib" --extern "winapi=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libwinapi-104480937783e048.rlib" --extern "wmi=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libwmi-377b6bea2b4ed49a.rlib" -L "native=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\build\ring-0198a9829c04966a\out" -L "native=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\third_party\yara\yara-4.5.5\libyara\include" -L "native=C:\Users\wen 整人\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\windows_x86_64_msvc-0.52.6\lib" -L "native=C:\Users\wen 整人\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\windows_x86_64_msvc-0.53.1\lib" -L "native=C:\Users\wen 整人\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\windows_x86_64_msvc-0.48.5\lib" -l dylib=advapi32 -l dylib=user32 --cfg yara_stub`
+     Running `C:\Users\wen 整人\.rustup\toolchains\stable-x86_64-pc-windows-msvc\bin\rustc.exe --crate-name driver_bridge --edition=2021 src\bin\driver_bridge.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type bin --emit=dep-info,link -C embed-bitcode=no -C debuginfo=2 --cfg "feature=\"default\"" --check-cfg cfg(docsrs,test) --check-cfg "cfg(feature, values(\"default\"))" -C metadata=fcb90cd9fea7b17a --out-dir "C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps" -C "incremental=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\incremental" -L "dependency=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps" --extern "anyhow=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libanyhow-7010c653578628de.rlib" --extern "bincode=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libbincode-58a8e0a8f37eecbd.rlib" --extern "chrono=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libchrono-2ac54349ce9f1bce.rlib" --extern "crossbeam_channel=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libcrossbeam_channel-6b095608c42a1ce1.rlib" --extern "ctrlc=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libctrlc-59e7529652f850e5.rlib" --extern "dashmap=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libdashmap-168895d01ada3da3.rlib" --extern "eframe=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libeframe-965b5a97a0b73a34.rlib" --extern "egui=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libegui-e7290d94d1fc7f04.rlib" --extern "env_logger=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libenv_logger-dc2f71be477004a5.rlib" --extern "hex=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libhex-d0b310f6f86bbf02.rlib" --extern "log=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\liblog-93586a77b2bd1549.rlib" --extern "lru=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\liblru-6eb511740e48d522.rlib" --extern "notify=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libnotify-34f87d2f970f3590.rlib" --extern "parking_lot=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libparking_lot-dd6caca741276d3d.rlib" --extern "rayon=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\librayon-24e5ded2bad62b4d.rlib" --extern "rfd=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\librfd-e04b47914d4b7947.rlib" --extern "ring=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libring-2669d664f8b01c4b.rlib" --extern "serde=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libserde-75a27f22f4d55de1.rlib" --extern "serde_json=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libserde_json-f1db0656a2f3938d.rlib" --extern "sha2=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libsha2-701c7bcdb8bbbcff.rlib" --extern "sysinfo=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libsysinfo-7e6d109ede6a2186.rlib" --extern "tokio=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libtokio-fcda9b830a063646.rlib" --extern "walkdir=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libwalkdir-8f3f01cd415bf704.rlib" --extern "winapi=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libwinapi-104480937783e048.rlib" --extern "wmi=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libwmi-377b6bea2b4ed49a.rlib" -L "native=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\build\ring-0198a9829c04966a\out" -L "native=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\third_party\yara\yara-4.5.5\libyara\include" -L "native=C:\Users\wen 整人\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\windows_x86_64_msvc-0.52.6\lib" -L "native=C:\Users\wen 整人\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\windows_x86_64_msvc-0.53.1\lib" -L "native=C:\Users\wen 整人\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\windows_x86_64_msvc-0.48.5\lib" -l dylib=advapi32 -l dylib=user32 --cfg yara_stub`
+     Running `C:\Users\wen 整人\.rustup\toolchains\stable-x86_64-pc-windows-msvc\bin\rustc.exe --crate-name file_monitor --edition=2021 src\bin\file_monitor.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type bin --emit=dep-info,link -C embed-bitcode=no -C debuginfo=2 --cfg "feature=\"default\"" --check-cfg cfg(docsrs,test) --check-cfg "cfg(feature, values(\"default\"))" -C metadata=1c0eb8e02bdf566f --out-dir "C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps" -C "incremental=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\incremental" -L "dependency=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps" --extern "anyhow=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libanyhow-7010c653578628de.rlib" --extern "bincode=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libbincode-58a8e0a8f37eecbd.rlib" --extern "chrono=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libchrono-2ac54349ce9f1bce.rlib" --extern "crossbeam_channel=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libcrossbeam_channel-6b095608c42a1ce1.rlib" --extern "ctrlc=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libctrlc-59e7529652f850e5.rlib" --extern "dashmap=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libdashmap-168895d01ada3da3.rlib" --extern "eframe=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libeframe-965b5a97a0b73a34.rlib" --extern "egui=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libegui-e7290d94d1fc7f04.rlib" --extern "env_logger=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libenv_logger-dc2f71be477004a5.rlib" --extern "hex=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libhex-d0b310f6f86bbf02.rlib" --extern "log=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\liblog-93586a77b2bd1549.rlib" --extern "lru=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\liblru-6eb511740e48d522.rlib" --extern "notify=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libnotify-34f87d2f970f3590.rlib" --extern "parking_lot=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libparking_lot-dd6caca741276d3d.rlib" --extern "rayon=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\librayon-24e5ded2bad62b4d.rlib" --extern "rfd=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\librfd-e04b47914d4b7947.rlib" --extern "ring=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libring-2669d664f8b01c4b.rlib" --extern "serde=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libserde-75a27f22f4d55de1.rlib" --extern "serde_json=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libserde_json-f1db0656a2f3938d.rlib" --extern "sha2=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libsha2-701c7bcdb8bbbcff.rlib" --extern "sysinfo=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libsysinfo-7e6d109ede6a2186.rlib" --extern "tokio=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libtokio-fcda9b830a063646.rlib" --extern "walkdir=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libwalkdir-8f3f01cd415bf704.rlib" --extern "winapi=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libwinapi-104480937783e048.rlib" --extern "wmi=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libwmi-377b6bea2b4ed49a.rlib" -L "native=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\build\ring-0198a9829c04966a\out" -L "native=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\third_party\yara\yara-4.5.5\libyara\include" -L "native=C:\Users\wen 整人\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\windows_x86_64_msvc-0.52.6\lib" -L "native=C:\Users\wen 整人\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\windows_x86_64_msvc-0.53.1\lib" -L "native=C:\Users\wen 整人\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\windows_x86_64_msvc-0.48.5\lib" -l dylib=advapi32 -l dylib=user32 --cfg yara_stub`
+warning: unused import: `std::os::windows::prelude::AsRawHandle`
+ --> src\bin\driver_bridge.rs:2:5
+  |
+2 | use std::os::windows::prelude::AsRawHandle;
+  |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused import: `std::ptr`
+ --> src\bin\driver_bridge.rs:4:5
+  |
+4 | use std::ptr;
+  |     ^^^^^^^^
+
+warning: field `device_path` is never read
+  --> src\bin\driver_bridge.rs:11:5
+   |
+10 | pub struct DriverInterface {
+   |            --------------- field in this struct
+11 |     device_path: String,
+   |     ^^^^^^^^^^^
+   |
+   = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+warning: unexpected `cfg` condition name: `yara_stub`
+  --> src\bin\yara_integration.rs:16:11
+   |
+16 | #[cfg(not(yara_stub))]
+   |           ^^^^^^^^^
+   |
+   = help: expected names are: `docsrs`, `feature`, and `test` and 31 more
+   = help: consider using a Cargo feature instead
+   = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+            [lints.rust]
+            unexpected_cfgs = { level = "warn", check-cfg = ['cfg(yara_stub)'] }
+   = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(yara_stub)");` to the top of the `build.rs`
+   = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+   = note: `#[warn(unexpected_cfgs)]` on by default
+
+warning: unexpected `cfg` condition name: `yara_stub`
+  --> src\bin\yara_integration.rs:53:7
+   |
+53 | #[cfg(yara_stub)]
+   |       ^^^^^^^^^
+   |
+   = help: consider using a Cargo feature instead
+   = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+            [lints.rust]
+            unexpected_cfgs = { level = "warn", check-cfg = ['cfg(yara_stub)'] }
+   = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(yara_stub)");` to the top of the `build.rs`
+   = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `yara_stub`
+  --> src\bin\yara_integration.rs:57:7
+   |
+57 | #[cfg(yara_stub)]
+   |       ^^^^^^^^^
+   |
+   = help: consider using a Cargo feature instead
+   = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+            [lints.rust]
+            unexpected_cfgs = { level = "warn", check-cfg = ['cfg(yara_stub)'] }
+   = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(yara_stub)");` to the top of the `build.rs`
+   = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `yara_stub`
+  --> src\bin\yara_integration.rs:61:7
+   |
+61 | #[cfg(yara_stub)]
+   |       ^^^^^^^^^
+   |
+   = help: consider using a Cargo feature instead
+   = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+            [lints.rust]
+            unexpected_cfgs = { level = "warn", check-cfg = ['cfg(yara_stub)'] }
+   = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(yara_stub)");` to the top of the `build.rs`
+   = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `yara_stub`
+  --> src\bin\yara_integration.rs:74:7
+   |
+74 | #[cfg(yara_stub)]
+   |       ^^^^^^^^^
+   |
+   = help: consider using a Cargo feature instead
+   = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+            [lints.rust]
+            unexpected_cfgs = { level = "warn", check-cfg = ['cfg(yara_stub)'] }
+   = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(yara_stub)");` to the top of the `build.rs`
+   = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `yara_stub`
+  --> src\bin\yara_integration.rs:82:7
+   |
+82 | #[cfg(yara_stub)]
+   |       ^^^^^^^^^
+   |
+   = help: consider using a Cargo feature instead
+   = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+            [lints.rust]
+            unexpected_cfgs = { level = "warn", check-cfg = ['cfg(yara_stub)'] }
+   = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(yara_stub)");` to the top of the `build.rs`
+   = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `yara_stub`
+  --> src\bin\yara_integration.rs:86:7
+   |
+86 | #[cfg(yara_stub)]
+   |       ^^^^^^^^^
+   |
+   = help: consider using a Cargo feature instead
+   = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+            [lints.rust]
+            unexpected_cfgs = { level = "warn", check-cfg = ['cfg(yara_stub)'] }
+   = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(yara_stub)");` to the top of the `build.rs`
+   = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unexpected `cfg` condition name: `yara_stub`
+  --> src\bin\yara_integration.rs:90:7
+   |
+90 | #[cfg(yara_stub)]
+   |       ^^^^^^^^^
+   |
+   = help: consider using a Cargo feature instead
+   = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+            [lints.rust]
+            unexpected_cfgs = { level = "warn", check-cfg = ['cfg(yara_stub)'] }
+   = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(yara_stub)");` to the top of the `build.rs`
+   = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unused import: `std::sync::Arc`
+ --> src\bin\yara_integration.rs:3:5
+  |
+3 | use std::sync::Arc;
+  |     ^^^^^^^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused import: `std::sync::Mutex`
+ --> src\bin\yara_integration.rs:4:5
+  |
+4 | use std::sync::Mutex;
+  |     ^^^^^^^^^^^^^^^^
+
+warning: unnecessary `unsafe` block
+   --> src\bin\yara_integration.rs:107:9
+    |
+107 |         unsafe {
+    |         ^^^^^^ unnecessary `unsafe` block
+    |
+    = note: `#[warn(unused_unsafe)]` (part of `#[warn(unused)]`) on by default
+
+warning: unnecessary `unsafe` block
+   --> src\bin\yara_integration.rs:118:18
+    |
+118 |         let rc = unsafe { yr_rules_load(cpath.as_ptr(), &mut rules_ptr) };
+    |                  ^^^^^^ unnecessary `unsafe` block
+
+warning: unnecessary `unsafe` block
+   --> src\bin\yara_integration.rs:134:18
+    |
+134 |         let rc = unsafe {
+    |                  ^^^^^^ unnecessary `unsafe` block
+
+warning: unnecessary `unsafe` block
+   --> src\bin\yara_integration.rs:155:18
+    |
+155 |         let rc = unsafe {
+    |                  ^^^^^^ unnecessary `unsafe` block
+
+warning: unnecessary `unsafe` block
+   --> src\bin\yara_integration.rs:169:18
+    |
+169 |         let rc = unsafe {
+    |                  ^^^^^^ unnecessary `unsafe` block
+
+warning: unnecessary `unsafe` block
+   --> src\bin\yara_integration.rs:182:13
+    |
+182 |             unsafe { yr_rules_destroy(r); }
+    |             ^^^^^^ unnecessary `unsafe` block
+
+warning: unnecessary `unsafe` block
+   --> src\bin\yara_integration.rs:184:9
+    |
+184 |         unsafe { yr_finalize(); }
+    |         ^^^^^^ unnecessary `unsafe` block
+
+warning: unused return value of `Box::<T>::from_raw` that must be used
+  --> src\bin\yara_integration.rs:78:14
+   |
+78 |     unsafe { Box::from_raw(rules as *mut i32); }
+   |              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   |
+   = note: call `drop(Box::from_raw(ptr))` if you intend to drop the `Box`
+   = note: `#[warn(unused_must_use)]` (part of `#[warn(unused)]`) on by default
+help: use `let _ = ...` to ignore the resulting value
+   |
+78 |     unsafe { let _ = Box::from_raw(rules as *mut i32); }
+   |              +++++++
+
+error[E0433]: failed to resolve: use of unresolved module or unlinked crate `rust_antivirus`
+  --> src\bin\yara_scan_example.rs:17:5
+   |
+17 |     rust_antivirus::yara_engine::YaraEngine::init()?;
+   |     ^^^^^^^^^^^^^^ use of unresolved module or unlinked crate `rust_antivirus`
+   |
+   = help: if you wanted to use a crate named `rust_antivirus`, use `cargo add rust_antivirus` to add it to your `Cargo.toml`
+
+error[E0433]: failed to resolve: use of unresolved module or unlinked crate `rust_antivirus`
+  --> src\bin\yara_scan_example.rs:25:9
+   |
+25 |         rust_antivirus::yara_engine::YaraEngine::with_rules(rules_path)
+   |         ^^^^^^^^^^^^^^ use of unresolved module or unlinked crate `rust_antivirus`
+   |
+   = help: if you wanted to use a crate named `rust_antivirus`, use `cargo add rust_antivirus` to add it to your `Cargo.toml`
+
+error[E0433]: failed to resolve: use of unresolved module or unlinked crate `rust_antivirus`
+  --> src\bin\yara_scan_example.rs:31:24
+   |
+31 |     let file_scanner = rust_antivirus::yara_integration::FileScanner::new(engine.clone());
+   |                        ^^^^^^^^^^^^^^ use of unresolved module or unlinked crate `rust_antivirus`
+   |
+   = help: if you wanted to use a crate named `rust_antivirus`, use `cargo add rust_antivirus` to add it to your `Cargo.toml`
+
+error[E0433]: failed to resolve: use of unresolved module or unlinked crate `rust_antivirus`
+  --> src\bin\yara_scan_example.rs:35:22
+   |
+35 |     let quarantine = rust_antivirus::yara_integration::QuarantineManager::new(quarantine_dir)?;
+   |                      ^^^^^^^^^^^^^^ use of unresolved module or unlinked crate `rust_antivirus`
+   |
+   = help: if you wanted to use a crate named `rust_antivirus`, use `cargo add rust_antivirus` to add it to your `Cargo.toml`
+
+error[E0433]: failed to resolve: use of unresolved module or unlinked crate `rust_antivirus`
+  --> src\bin\yara_scan_example.rs:69:15
+   |
+69 |     scanner: &rust_antivirus::yara_integration::FileScanner,
+   |               ^^^^^^^^^^^^^^ use of unresolved module or unlinked crate `rust_antivirus`
+   |
+   = help: if you wanted to use a crate named `rust_antivirus`, use `cargo add rust_antivirus` to add it to your `Cargo.toml`
+
+warning: `rust_antivirus` (bin "driver_bridge") generated 3 warnings (run `cargo fix --bin "driver_bridge" -p rust_antivirus` to apply 2 suggestions)
+warning: unused imports: `Pid` and `ProcessRefreshKind`
+  --> src\bin\memory_monitor.rs:11:23
+   |
+11 | use sysinfo::{System, ProcessRefreshKind, Pid};
+   |                       ^^^^^^^^^^^^^^^^^^  ^^^
+   |
+   = note: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused import: `std::sync::Arc`
+ --> src\bin\yara_integration.rs:3:5
+  |
+3 | use std::sync::Arc;
+  |     ^^^^^^^^^^^^^^
+
+warning: unused import: `std::os::windows::prelude::AsRawHandle`
+ --> src\bin\driver_bridge.rs:2:5
+  |
+2 | use std::os::windows::prelude::AsRawHandle;
+  |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: variable does not need to be mutable
+  --> src\bin\memory_monitor.rs:88:9
+   |
+88 |     let mut driver = match DriverInterface::open("\\\\.\\WenleDriver") {
+   |         ----^^^^^^
+   |         |
+   |         help: remove this `mut`
+   |
+   = note: `#[warn(unused_mut)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused variable: `driver`
+  --> src\bin\memory_monitor.rs:88:9
+   |
+88 |     let mut driver = match DriverInterface::open("\\\\.\\WenleDriver") {
+   |         ^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_driver`
+   |
+   = note: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused variable: `pid`
+   --> src\bin\memory_monitor.rs:173:27
+    |
+173 | fn heuristic_scan_process(pid: u32, exe_path: &str, proc_name: &str) -> Option<(String, u8)> {
+    |                           ^^^ help: if this is intentional, prefix it with an underscore: `_pid`
+
+warning: methods `scan_file` and `scan_mem` are never used
+   --> src\bin\yara_integration.rs:127:12
+    |
+105 | impl YaraEngine {
+    | --------------- methods in this implementation
+...
+127 |     pub fn scan_file(&self, path: &std::path::Path) -> Result<bool, String> {
+    |            ^^^^^^^^^
+...
+164 |     pub fn scan_mem(&self, buf: &[u8]) -> Result<bool, String> {
+    |            ^^^^^^^^
+    |
+    = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+warning: function `main` is never used
+   --> src\bin\yara_integration.rs:189:4
+    |
+189 | fn main() {
+    |    ^^^^
+
+warning: field `device_path` is never read
+  --> src\bin\driver_bridge.rs:11:5
+   |
+10 | pub struct DriverInterface {
+   |            --------------- field in this struct
+11 |     device_path: String,
+   |     ^^^^^^^^^^^
+
+warning: methods `is_available` and `read_notification` are never used
+  --> src\bin\driver_bridge.rs:25:12
+   |
+15 | impl DriverInterface {
+   | -------------------- methods in this implementation
+...
+25 |     pub fn is_available(&self) -> bool {
+   |            ^^^^^^^^^^^^
+...
+31 |     pub fn read_notification(&mut self) -> io::Result<Option<Vec<u8>>> {
+   |            ^^^^^^^^^^^^^^^^^
+
+warning: function `main` is never used
+  --> src\bin\driver_bridge.rs:45:4
+   |
+45 | fn main() {
+   |    ^^^^
+
+warning: unused import: `chrono::DateTime`
+  --> src\bin\file_monitor.rs:15:5
+   |
+15 | use chrono::DateTime;
+   |     ^^^^^^^^^^^^^^^^
+   |
+   = note: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+error[E0433]: failed to resolve: use of unresolved module or unlinked crate `rust_antivirus`
+  --> src\bin\yara_scan_example.rs:93:15
+   |
+93 |     scanner: &rust_antivirus::yara_integration::FileScanner,
+   |               ^^^^^^^^^^^^^^ use of unresolved module or unlinked crate `rust_antivirus`
+   |
+   = help: if you wanted to use a crate named `rust_antivirus`, use `cargo add rust_antivirus` to add it to your `Cargo.toml`
+
+warning: variable does not need to be mutable
+   --> src\bin\file_monitor.rs:102:9
+    |
+102 |     let mut driver = match DriverInterface::open("\\\\.\\WenleDriver") {
+    |         ----^^^^^^
+    |         |
+    |         help: remove this `mut`
+    |
+    = note: `#[warn(unused_mut)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused variable: `driver`
+   --> src\bin\file_monitor.rs:102:9
+    |
+102 |     let mut driver = match DriverInterface::open("\\\\.\\WenleDriver") {
+    |         ^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_driver`
+    |
+    = note: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+warning: methods `scan_proc` and `scan_mem` are never used
+   --> src\bin\yara_integration.rs:150:12
+    |
+105 | impl YaraEngine {
+    | --------------- methods in this implementation
+...
+150 |     pub fn scan_proc(&self, pid: i32) -> Result<bool, String> {
+    |            ^^^^^^^^^
+...
+164 |     pub fn scan_mem(&self, buf: &[u8]) -> Result<bool, String> {
+    |            ^^^^^^^^
+    |
+    = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+error[E0433]: failed to resolve: use of unresolved module or unlinked crate `rust_antivirus`
+   --> src\bin\yara_scan_example.rs:121:18
+    |
+121 |     engine: &Arc<rust_antivirus::yara_engine::YaraEngine>,
+    |                  ^^^^^^^^^^^^^^ use of unresolved module or unlinked crate `rust_antivirus`
+    |
+    = help: if you wanted to use a crate named `rust_antivirus`, use `cargo add rust_antivirus` to add it to your `Cargo.toml`
+
+error[E0425]: cannot find function `yr_initialize` in this scope
+   --> src\yara_sys.rs:159:11
+    |
+159 |     match yr_initialize() {
+    |           ^^^^^^^^^^^^^ not found in this scope
+    |
+help: consider importing this function
+    |
+  7 + use crate::yara_sys::yara_stub::yr_initialize;
+    |
+
+error[E0425]: cannot find function `yr_get_error_message` in this scope
+   --> src\yara_sys.rs:163:13
+    |
+163 |             yr_get_error_message(code, buf.as_mut_ptr() as *mut c_char, buf.len());
+    |             ^^^^^^^^^^^^^^^^^^^^ not found in this scope
+    |
+help: consider importing this function
+    |
+  7 + use crate::yara_sys::yara_stub::yr_get_error_message;
+    |
+
+error[E0425]: cannot find function `yr_finalize` in this scope
+   --> src\yara_sys.rs:170:11
+    |
+170 |     match yr_finalize() {
+    |           ^^^^^^^^^^^ not found in this scope
+    |
+help: consider importing this function
+    |
+  7 + use crate::yara_sys::yara_stub::yr_finalize;
+    |
+
+error[E0425]: cannot find function `yr_get_error_message` in this scope
+   --> src\yara_sys.rs:174:13
+    |
+174 |             yr_get_error_message(code, buf.as_mut_ptr() as *mut c_char, buf.len());
+    |             ^^^^^^^^^^^^^^^^^^^^ not found in this scope
+    |
+help: consider importing this function
+    |
+  7 + use crate::yara_sys::yara_stub::yr_get_error_message;
+    |
+
+error[E0425]: cannot find function `yr_rules_load` in this scope
+   --> src\yara_sys.rs:185:11
+    |
+185 |     match yr_rules_load(c_path.as_ptr(), &mut rules) {
+    |           ^^^^^^^^^^^^^ not found in this scope
+    |
+help: consider importing this function
+    |
+  7 + use crate::yara_sys::yara_stub::yr_rules_load;
+    |
+
+error[E0425]: cannot find function `yr_get_error_message` in this scope
+   --> src\yara_sys.rs:195:13
+    |
+195 |             yr_get_error_message(code, buf.as_mut_ptr() as *mut c_char, buf.len());
+    |             ^^^^^^^^^^^^^^^^^^^^ not found in this scope
+    |
+help: consider importing this function
+    |
+  7 + use crate::yara_sys::yara_stub::yr_get_error_message;
+    |
+
+error[E0425]: cannot find function `yr_rules_scan_mem` in module `yara_sys`
+   --> src\yara_engine.rs:98:36
+    |
+ 98 |             let result = yara_sys::yr_rules_scan_mem(
+    |                                    ^^^^^^^^^^^^^^^^^ not found in `yara_sys`
+    |
+note: function `crate::yara_sys::yara_stub::yr_rules_scan_mem` exists but is inaccessible
+   --> src\yara_sys.rs:137:5
+    |
+137 |     pub extern "C" fn yr_rules_scan_mem(_rules: *mut YR_RULES, _buffer: *const u8, _buffer_size: usize, _flags: c_int, _callback: YR_CALLBACK_FUNC, _user_data: *mut c_void, _timeout: c_int) -> c_int { ...
+    |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ not accessible
+
+error[E0425]: cannot find function `yr_rules_scan_file` in module `yara_sys`
+   --> src\yara_engine.rs:140:36
+    |
+140 |             let result = yara_sys::yr_rules_scan_file(
+    |                                    ^^^^^^^^^^^^^^^^^^ help: a function with a similar name exists: `yr_rules_load_safe`
+    |
+   ::: src\yara_sys.rs:180:1
+    |
+180 | pub unsafe fn yr_rules_load_safe(path: &str) -> Result<*mut YR_RULES, String> {
+    | ----------------------------------------------------------------------------- similarly named function `yr_rules_load_safe` defined here
+    |
+note: function `crate::yara_sys::yara_stub::yr_rules_scan_file` exists but is inaccessible
+   --> src\yara_sys.rs:140:5
+    |
+140 |     pub extern "C" fn yr_rules_scan_file(_rules: *mut YR_RULES, _filename: *const c_char, _flags: c_int, _callback: YR_CALLBACK_FUNC, _user_data: *mut c_void, _timeout: c_int) -> c_int { ...
+    |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ not accessible
+
+error[E0425]: cannot find function `yr_rules_destroy` in module `yara_sys`
+   --> src\yara_engine.rs:209:35
+    |
+209 |                 let _ = yara_sys::yr_rules_destroy(rules);
+    |                                   ^^^^^^^^^^^^^^^^ not found in `yara_sys`
+    |
+note: function `crate::yara_sys::yara_stub::yr_rules_destroy` exists but is inaccessible
+   --> src\yara_sys.rs:134:5
+    |
+134 |     pub extern "C" fn yr_rules_destroy(_rules: *mut YR_RULES) -> c_int { YARA_ERROR_SUCCESS }
+    |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ not accessible
+
+warning: `rust_antivirus` (bin "yara_integration") generated 18 warnings (run `cargo fix --bin "yara_integration" -p rust_antivirus` to apply 2 suggestions)
+warning: unexpected `cfg` condition name: `yara_stub`
+  --> src\yara_sys.rs:58:11
+   |
+58 | #[cfg(not(yara_stub))]
+   |           ^^^^^^^^^
+   |
+   = help: expected names are: `docsrs`, `feature`, and `test` and 31 more
+   = help: consider using a Cargo feature instead
+   = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+            [lints.rust]
+            unexpected_cfgs = { level = "warn", check-cfg = ['cfg(yara_stub)'] }
+   = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(yara_stub)");` to the top of the `build.rs`
+   = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+   = note: `#[warn(unexpected_cfgs)]` on by default
+
+warning: unexpected `cfg` condition name: `yara_stub`
+   --> src\yara_sys.rs:104:7
+    |
+104 | #[cfg(yara_stub)]
+    |       ^^^^^^^^^
+    |
+    = help: consider using a Cargo feature instead
+    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+             [lints.rust]
+             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(yara_stub)'] }
+    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(yara_stub)");` to the top of the `build.rs`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+warning: unused import: `std::ffi::CStr`
+   --> src\yara_sys.rs:107:9
+    |
+107 |     use std::ffi::CStr;
+    |         ^^^^^^^^^^^^^^
+    |
+    = note: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused import: `std::ffi::CStr`
+ --> src\yara_engine.rs:6:5
+  |
+6 | use std::ffi::CStr;
+  |     ^^^^^^^^^^^^^^
+
+error[E0433]: failed to resolve: use of unresolved module or unlinked crate `rust_antivirus`
+   --> src\bin\yara_scan_example.rs:130:26
+    |
+130 |     let memory_scanner = rust_antivirus::yara_integration::MemoryScanner::new(engine.clone());
+    |                          ^^^^^^^^^^^^^^ use of unresolved module or unlinked crate `rust_antivirus`
+    |
+    = help: if you wanted to use a crate named `rust_antivirus`, use `cargo add rust_antivirus` to add it to your `Cargo.toml`
+
+error[E0433]: failed to resolve: use of unresolved module or unlinked crate `rust_antivirus`
+   --> src\bin\yara_scan_example.rs:149:18
+    |
+149 |     quarantine: &rust_antivirus::yara_integration::QuarantineManager,
+    |                  ^^^^^^^^^^^^^^ use of unresolved module or unlinked crate `rust_antivirus`
+    |
+    = help: if you wanted to use a crate named `rust_antivirus`, use `cargo add rust_antivirus` to add it to your `Cargo.toml`
+
+error[E0282]: type annotations needed
+   --> src\bin\yara_scan_example.rs:101:53
+    |
+101 |             log::info!("  Total files scanned: {}", results.len());
+    |                                                     ^^^^^^^ cannot infer type
+
+error[E0282]: type annotations needed
+   --> src\bin\yara_scan_example.rs:154:49
+    |
+154 |             log::info!("Quarantined files: {}", files.len());
+    |                                                 ^^^^^ cannot infer type
+
+error[E0282]: type annotations needed
+   --> src\bin\yara_scan_example.rs:156:38
+    |
+156 |                 log::info!("  - {}", file.display());
+    |                                      ^^^^ cannot infer type
+
+Some errors have detailed explanations: E0282, E0433.
+For more information about an error, try `rustc --explain E0282`.
+warning: rust_antivirus@0.2.0-enterprise: Building for Windows with YARA support
+warning: rust_antivirus@0.2.0-enterprise: Precompiled YARA library not found at: C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\third_party\yara\lib\x64\Release\yara.lib
+warning: rust_antivirus@0.2.0-enterprise: Please compile YARA first using build_yara.ps1
+warning: rust_antivirus@0.2.0-enterprise: YARA FFI bindings ready (hand-written)
+error: could not compile `rust_antivirus` (bin "yara_scan_example") due to 12 previous errors
+
+Caused by:
+  process didn't exit successfully: `C:\Users\wen 整人\.rustup\toolchains\stable-x86_64-pc-windows-msvc\bin\rustc.exe --crate-name yara_scan_example --edition=2021 src\bin\yara_scan_example.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type bin --emit=dep-info,link -C embed-bitcode=no -C debuginfo=2 --cfg "feature=\"default\"" --check-cfg cfg(docsrs,test) --check-cfg "cfg(feature, values(\"default\"))" -C metadata=732f2a998ce25811 --out-dir "C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps" -C "incremental=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\incremental" -L "dependency=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps" --extern "anyhow=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libanyhow-7010c653578628de.rlib" --extern "bincode=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libbincode-58a8e0a8f37eecbd.rlib" --extern "chrono=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libchrono-2ac54349ce9f1bce.rlib" --extern "crossbeam_channel=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libcrossbeam_channel-6b095608c42a1ce1.rlib" --extern "ctrlc=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libctrlc-59e7529652f850e5.rlib" --extern "dashmap=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libdashmap-168895d01ada3da3.rlib" --extern "eframe=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libeframe-965b5a97a0b73a34.rlib" --extern "egui=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libegui-e7290d94d1fc7f04.rlib" --extern "env_logger=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libenv_logger-dc2f71be477004a5.rlib" --extern "hex=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libhex-d0b310f6f86bbf02.rlib" --extern "log=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\liblog-93586a77b2bd1549.rlib" --extern "lru=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\liblru-6eb511740e48d522.rlib" --extern "notify=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libnotify-34f87d2f970f3590.rlib" --extern "parking_lot=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libparking_lot-dd6caca741276d3d.rlib" --extern "rayon=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\librayon-24e5ded2bad62b4d.rlib" --extern "rfd=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\librfd-e04b47914d4b7947.rlib" --extern "ring=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libring-2669d664f8b01c4b.rlib" --extern "serde=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libserde-75a27f22f4d55de1.rlib" --extern "serde_json=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libserde_json-f1db0656a2f3938d.rlib" --extern "sha2=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libsha2-701c7bcdb8bbbcff.rlib" --extern "sysinfo=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libsysinfo-7e6d109ede6a2186.rlib" --extern "tokio=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libtokio-fcda9b830a063646.rlib" --extern "walkdir=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libwalkdir-8f3f01cd415bf704.rlib" --extern "winapi=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libwinapi-104480937783e048.rlib" --extern "wmi=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libwmi-377b6bea2b4ed49a.rlib" -L "native=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\build\ring-0198a9829c04966a\out" -L "native=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\third_party\yara\yara-4.5.5\libyara\include" -L "native=C:\Users\wen 整人\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\windows_x86_64_msvc-0.52.6\lib" -L "native=C:\Users\wen 整人\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\windows_x86_64_msvc-0.53.1\lib" -L "native=C:\Users\wen 整人\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\windows_x86_64_msvc-0.48.5\lib" -l dylib=advapi32 -l dylib=user32 --cfg yara_stub` (exit code: 1)
+warning: build failed, waiting for other jobs to finish...
+error[E0308]: arguments to this function are incorrect
+   --> src\yara_integration.rs:148:31
+    |
+148 |             let read_result = ReadProcessMemory(
+    |                               ^^^^^^^^^^^^^^^^^
+    |
+note: expected `winapi::ctypes::c_void`, found `std::ffi::c_void`
+   --> src\yara_integration.rs:150:17
+    |
+150 |                 0x400000 as *const c_void, // 某些進程的代碼段起始地址
+    |                 ^^^^^^^^^^^^^^^^^^^^^^^^^
+    = note: `std::ffi::c_void` and `winapi::ctypes::c_void` have similar names, but are actually distinct types
+note: `std::ffi::c_void` is defined in crate `core`
+   --> C:\Users\wen 整人\.rustup\toolchains\stable-x86_64-pc-windows-msvc\lib/rustlib/src/rust\library\core\src\ffi\mod.rs:61:1
+    |
+ 61 | pub enum c_void {
+    | ^^^^^^^^^^^^^^^
+note: `winapi::ctypes::c_void` is defined in crate `winapi`
+   --> C:\Users\wen 整人\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\winapi-0.3.9\src\lib.rs:38:5
+    |
+ 38 |     pub enum c_void {}
+    |     ^^^^^^^^^^^^^^^
+note: expected `winapi::ctypes::c_void`, found `std::ffi::c_void`
+   --> src\yara_integration.rs:151:17
+    |
+151 |                 buffer.as_mut_ptr() as *mut c_void,
+    |                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    = note: `std::ffi::c_void` and `winapi::ctypes::c_void` have similar names, but are actually distinct types
+note: `std::ffi::c_void` is defined in crate `core`
+   --> C:\Users\wen 整人\.rustup\toolchains\stable-x86_64-pc-windows-msvc\lib/rustlib/src/rust\library\core\src\ffi\mod.rs:61:1
+    |
+ 61 | pub enum c_void {
+    | ^^^^^^^^^^^^^^^
+note: `winapi::ctypes::c_void` is defined in crate `winapi`
+   --> C:\Users\wen 整人\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\winapi-0.3.9\src\lib.rs:38:5
+    |
+ 38 |     pub enum c_void {}
+    |     ^^^^^^^^^^^^^^^
+note: function defined here
+   --> C:\Users\wen 整人\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\winapi-0.3.9\src\um\memoryapi.rs:74:12
+    |
+ 74 |     pub fn ReadProcessMemory(
+    |            ^^^^^^^^^^^^^^^^^
+
+warning: unused variable: `pid_value`
+   --> src\engine.rs:731:13
+    |
+731 |         let pid_value = pid.as_u32();
+    |             ^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_pid_value`
+    |
+    = note: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+warning: `rust_antivirus` (bin "file-monitor") generated 28 warnings (24 duplicates) (run `cargo fix --bin "file-monitor" -p rust_antivirus` to apply 3 suggestions)
+warning: unused variable: `engine`
+   --> src\process_monitor.rs:144:9
+    |
+144 |         engine: &AntivirusEngine,
+    |         ^^^^^^ help: if this is intentional, prefix it with an underscore: `_engine`
+
+warning: unused variable: `filename`
+   --> src\yara_sys.rs:117:37
+    |
+117 |     pub extern "C" fn yr_rules_load(filename: *const c_char, rules: *mut *mut YR_RULES) -> c_int {
+    |                                     ^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_filename`
+
+warning: unused variable: `rule_ptr`
+   --> src\yara_engine.rs:178:33
+    |
+178 |                     if let Some(rule_ptr) = (message_data as *const yara_sys::YR_RULE).as_ref() {
+    |                                 ^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_rule_ptr`
+
+warning: `rust_antivirus` (bin "memory-monitor") generated 29 warnings (18 duplicates) (run `cargo fix --bin "memory-monitor" -p rust_antivirus` to apply 6 suggestions)
+Some errors have detailed explanations: E0308, E0425.
+For more information about an error, try `rustc --explain E0308`.
+warning: `rust_antivirus` (bin "wenle-antivirus") generated 8 warnings
+warning: rust_antivirus@0.2.0-enterprise: Building for Windows with YARA support
+warning: rust_antivirus@0.2.0-enterprise: Precompiled YARA library not found at: C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\third_party\yara\lib\x64\Release\yara.lib
+warning: rust_antivirus@0.2.0-enterprise: Please compile YARA first using build_yara.ps1
+warning: rust_antivirus@0.2.0-enterprise: YARA FFI bindings ready (hand-written)
+error: could not compile `rust_antivirus` (bin "wenle-antivirus") due to 10 previous errors; 8 warnings emitted
+
+Caused by:
+  process didn't exit successfully: `C:\Users\wen 整人\.rustup\toolchains\stable-x86_64-pc-windows-msvc\bin\rustc.exe --crate-name wenle_antivirus --edition=2021 src\main.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type bin --emit=dep-info,link -C embed-bitcode=no -C debuginfo=2 --cfg "feature=\"default\"" --check-cfg cfg(docsrs,test) --check-cfg "cfg(feature, values(\"default\"))" -C metadata=4fbdc7c246e3899e --out-dir "C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps" -C "incremental=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\incremental" -L "dependency=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps" --extern "anyhow=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libanyhow-7010c653578628de.rlib" --extern "bincode=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libbincode-58a8e0a8f37eecbd.rlib" --extern "chrono=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libchrono-2ac54349ce9f1bce.rlib" --extern "crossbeam_channel=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libcrossbeam_channel-6b095608c42a1ce1.rlib" --extern "ctrlc=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libctrlc-59e7529652f850e5.rlib" --extern "dashmap=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libdashmap-168895d01ada3da3.rlib" --extern "eframe=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libeframe-965b5a97a0b73a34.rlib" --extern "egui=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libegui-e7290d94d1fc7f04.rlib" --extern "env_logger=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libenv_logger-dc2f71be477004a5.rlib" --extern "hex=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libhex-d0b310f6f86bbf02.rlib" --extern "log=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\liblog-93586a77b2bd1549.rlib" --extern "lru=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\liblru-6eb511740e48d522.rlib" --extern "notify=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libnotify-34f87d2f970f3590.rlib" --extern "parking_lot=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libparking_lot-dd6caca741276d3d.rlib" --extern "rayon=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\librayon-24e5ded2bad62b4d.rlib" --extern "rfd=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\librfd-e04b47914d4b7947.rlib" --extern "ring=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libring-2669d664f8b01c4b.rlib" --extern "serde=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libserde-75a27f22f4d55de1.rlib" --extern "serde_json=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libserde_json-f1db0656a2f3938d.rlib" --extern "sha2=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libsha2-701c7bcdb8bbbcff.rlib" --extern "sysinfo=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libsysinfo-7e6d109ede6a2186.rlib" --extern "tokio=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libtokio-fcda9b830a063646.rlib" --extern "walkdir=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libwalkdir-8f3f01cd415bf704.rlib" --extern "winapi=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libwinapi-104480937783e048.rlib" --extern "wmi=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\deps\libwmi-377b6bea2b4ed49a.rlib" -L "native=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\target\debug\build\ring-0198a9829c04966a\out" -L "native=C:\Users\wen 整人\Downloads\Rust-antivirus-main (1)\Rust-antivirus-main\rust_antivirus\third_party\yara\yara-4.5.5\libyara\include" -L "native=C:\Users\wen 整人\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\windows_x86_64_msvc-0.52.6\lib" -L "native=C:\Users\wen 整人\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\windows_x86_64_msvc-0.53.1\lib" -L "native=C:\Users\wen 整人\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\windows_x86_64_msvc-0.48.5\lib" -l dylib=advapi32 -l dylib=user32 --cfg yara_stub` (exit code: 1)

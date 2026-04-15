@@ -1,0 +1,261 @@
+// 編譯和使用建議
+
+## 快速開始指南
+
+### 1. 編譯 YARA C 庫（Windows）
+
+**前提條件：**
+- Visual Studio 2022（或 2019/2017）已安裝，含 C++ 開發工具
+- CMake 3.15 或更高版本
+- PowerShell 執行權限
+
+**步驟：**
+
+```powershell
+# 1. 進入專案目錄
+cd rust_antivirus
+
+# 2. 執行編譯腳本
+.\build_yara.ps1 -Architecture x64 -VSVersion 2022 -Configuration Release
+
+# 如果遇到權限問題：
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+
+# 3. 編譯成功後，會生成：
+# - third_party\yara\lib\x64\Release\yara.lib
+# - third_party\yara\include\yara\*.h (所有頭文件)
+```
+
+**編譯選項：**
+- `-Architecture`: x64 或 x86（預設 x64）
+- `-VSVersion`: 2017、2019 或 2022（預設 2022）
+- `-Configuration`: Debug 或 Release（預設 Release）
+
+### 2. Cargo 編譯配置
+
+Cargo.toml 已配置支援 YARA：
+
+```toml
+[dependencies]
+# ... 其他依賴 ...
+yara = { version = "0.30.0", optional = true }
+
+[features]
+default = []
+with-yara = ["yara"]  # 啟用 YARA 支援
+```
+
+**編譯命令：**
+
+```bash
+# 標準編譯（不含 YARA）
+cargo build --release
+
+# 含 YARA 支援編譯
+cargo build --release --features with-yara
+
+# 調試版本
+cargo build --features with-yara
+```
+
+### 3. 專案結構
+
+```
+rust_antivirus/
+├── build.rs                              # 編譯腳本（編譯 YARA）
+├── build_yara.ps1                        # Windows YARA 編譯腳本
+├── Cargo.toml                            # 依賴配置
+├── src/
+│   ├── main.rs                           # 主程序入口
+│   ├── yara_sys.rs                       # YARA C FFI 定義
+│   ├── yara_engine.rs                    # YARA 高級封裝（線程安全）
+│   ├── yara_integration.rs               # 文件/記憶體掃描和隔離
+│   ├── engine.rs                         # 核心掃描引擎（已修改使用 YARA）
+│   ├── file_monitor.rs                   # 文件監控（可用驅動或用戶態）
+│   ├── memory_monitor.rs                 # 記憶體監控
+│   ├── process_monitor.rs                # 進程監控
+│   ├── gui.rs                            # GUI 界面
+│   ├── ipc/                              # 進程間通訊
+│   │   ├── mod.rs
+│   │   ├── message.rs
+│   │   └── named_pipe.rs
+│   └── config/                           # 配置管理
+├── third_party/
+│   └── yara/
+│       ├── yara-4.5.5/                   # YARA 源碼
+│       ├── build/                        # CMake 編譯輸出（臨時）
+│       ├── lib/
+│       │   └── x64/Release/yara.lib      # 編譯後的庫
+│       └── include/
+│           └── yara/                     # 頭文件
+└── Configuration/
+    ├── anti.yarac                        # 編譯的 YARA 規則（27.4MB）
+    ├── yara64.exe                        # YARA 命令行工具
+    └── yarac64.exe                       # YARA 規則編譯器
+```
+
+### 4. 運行程序
+
+```bash
+# 啟動主程序
+cargo run --release --features with-yara
+
+# 啟動文件監控子程序
+cargo run --bin file-monitor --release
+
+# 啟動記憶體監控子程序
+cargo run --bin memory-monitor --release
+```
+
+### 5. 核心功能說明
+
+#### YARA 集成架構
+
+**yara_sys.rs**: 
+- 定義 YARA C API 的 FFI 綁定
+- 包含 `yr_initialize()`, `yr_rules_load()`, `yr_rules_scan_mem()` 等
+- 提供安全封裝函數（`yr_initialize_safe()` 等）
+
+**yara_engine.rs**:
+- 全局單一初始化 `YaraEngine::init()`
+- 線程安全的規則加載和掃描
+- 支援記憶體和文件掃描
+- 自動資源清理
+
+**yara_integration.rs**:
+- `FileScanner`: 單個文件/目錄遞迴掃描
+- `MemoryScanner`: 進程記憶體掃描（Windows）
+- `QuarantineManager`: 隔離和恢復感染文件
+
+#### 企業級功能
+
+1. **編譯規則支援**
+   - 使用預編譯的 `anti.yarac`（27.4MB）
+   - 加載速度快，規則已優化
+   - 支援複雜規則（PE、Hash、Math 等模塊）
+
+2. **記憶體監控**
+   - 攔截進程創建和映像載入
+   - 通過 yara_engine 掃描內存區域
+   - 支援隔離和終止惡意進程
+
+3. **文件監控**
+   - 實時監控文件創建/修改
+   - 背景掃描隔離區域
+   - 快速隔離感染文件
+
+4. **隔離機制**
+   - 感染文件移至隔離目錄
+   - 保留威脅名稱和時間戳
+   - 支援恢復功能
+
+5. **進程間通訊**
+   - Named Pipe 通訊
+   - 驅動與用戶態掃描服務通訊
+   - 事件同步機制
+
+### 6. 使用已編譯的規則
+
+已有的 `Configuration/anti.yarac` 是預編譯的二進位規則集，包含：
+- PE 文件分析
+- 行為檢測規則
+- 已知惡意軟件簽名
+- 混淆代碼檢測
+
+**加載規則：**
+
+```rust
+use crate::yara_engine::YaraEngine;
+
+// 初始化引擎
+YaraEngine::init()?;
+
+// 加載編譯的規則
+let engine = YaraEngine::with_rules("Configuration/anti.yarac")?;
+
+// 掃描文件
+let result = engine.scan_file("target_file.exe")?;
+
+// 掃描記憶體
+let mem_result = engine.scan_mem(&buffer)?;
+```
+
+### 7. 驅動程序集成建議
+
+對於企業級部署，建議架構：
+
+**驅動層（Kernel）:**
+- Minifilter 攔截文件創建/修改
+- PsSetLoadImageNotifyRoutine 攔截映像載入
+- 通過 DeviceIoControl 與用戶態通訊
+
+**用戶態層（User-mode):**
+- 接收驅動事件
+- 使用 YARA 引擎掃描
+- 返回掃描結果給驅動
+- 驅動執行隔離/阻止操作
+
+**通訊機制:**
+```
+Kernel Driver  <--IOCTL/Pipe--> User-mode Scanner  <--YARA API--> libyara.lib
+   (Monitor)                        (Engine)
+```
+
+### 8. 編譯故障排除
+
+**問題：CMake 找不到 Visual Studio**
+```powershell
+# 使用完整的 VS 安裝路徑
+.\build_yara.ps1 -VSVersion 2022
+```
+
+**問題：找不到 YARA 源碼**
+```powershell
+# 確認 third_party\yara\yara-4.5.5 存在
+# 如果不存在，從 GitHub 克隆：
+git clone https://github.com/VirusTotal/yara.git third_party\yara\yara-4.5.5
+```
+
+**問題：連結錯誤**
+```bash
+# 檢查 yara.lib 是否在正確位置
+# 應在：third_party\yara\lib\x64\Release\yara.lib
+
+# 手動指定路徑編譯
+YARA_LIB_PATH=./third_party/yara/lib/x64/Release cargo build --release
+```
+
+### 9. 性能優化建議
+
+1. **規則優化**：使用預編譯規則（.yarac）比文本規則快 3-5 倍
+2. **記憶體掃描**：分段掃描（4MB 分片）避免超時
+3. **緩存**：實現文件哈希緩存減少重複掃描
+4. **多線程**：使用 rayon 並行掃描目錄
+
+### 10. 安全建議
+
+1. **驅動簽章**：生產環境需要代碼簽章
+2. **白名單**：保留可信軟件白名單
+3. **隔離方案**：確保隔離區域不被繞過
+4. **日誌記錄**：記錄所有掃描和隔離操作
+5. **規則更新**：定期更新 YARA 規則集
+
+---
+
+**快速測試命令：**
+
+```bash
+# 1. 編譯 YARA
+.\build_yara.ps1
+
+# 2. 編譯 Rust 程序
+cargo build --release --features with-yara
+
+# 3. 運行掃描
+cargo run --release -- --scan-dir C:\Windows\Temp
+
+# 4. 查看隔離文件
+cargo run --release -- --list-quarantine
+```
+
+此配置可用於企業級部署。需要進一步定制驅動、簽章或規則更新機制。
